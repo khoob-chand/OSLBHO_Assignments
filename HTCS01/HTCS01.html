@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        @font-face {
+            font-family:Proxima Nova bold;
+            src: url(extrabold.otf);
+
+            font-family:Regular ;
+            src:url(regular.otf);
+            
+        }
+        h3{
+            font-family:Proxima Nova bold; 
+        }
+        .container-1{
+            /* border:1px solid black; */
+        
+            display:flex;
+            
+            
+            width:60%;
+            justify-content:space-evenly;
+            /* justify-items:center; */
+            height:300px;
+            align-items: center; 
+            /* margin: auto; */
+            margin-top: 10%;
+            
+            
+            
+        }
+        .flex-item{
+            height:100px;
+            width:100px;
+            /* background-color: red; */
+            /* border:1px solid black; */
+            margin:20px 
+            
+           
+        }
+        #con-1{
+            flex-basis: 400px;
+            
+        }
+        #con-2{
+            flex-basis: 400px;;
+        }
+        #con-3{
+            flex-basis: 400px;
+        
+        }
+        #con-4{
+            flex-basis: 400px;;
+        }
+        .container-3{
+            flex-basis: 200px;;
+        }
+        .container-2{
+            display:flex;
+            width:60%;
+            /* border:1px solid black; */
+            /* margin: auto; */
+            justify-content:space-evenly;
+            margin-top: 5%;
+            height:300px;
+           
+        }
+        .regular{
+            font-family: Regular;
+        }
+        .container-3{
+            /* border: 1px solid red; */
+            width:60%;
+            display: flex;
+           flex-direction: column;
+           
+           /* border:1px solid red; */
+           margin-left: 60%;
+           margin-top:-30%;
+           background-image: url(red.png);
+           background-size: 150px;
+           background-repeat: no-repeat;
+           background-position-x: -20px;
+         
+          
+          
+         
+           
+
+        }
+        .doc{
+            flex-basis: 300px;
+            border:1px solid red;
+            height:100px;
+        }
+        .webkit{
+            -webkit-text-stroke-width:2px;
+            -webkit-text-stroke-color:black;
+            -webkit-text-fill-color:white;
+            
+            
+        }
+ 
+       
+      
+    </style>
+</head>
+<body>
+    
+
+    
+    <div class="container-1">
+        
+        <div class="flex-item" id="con-1">
+            <img src="triangle.png" alt="">
+            <h3> AUTOMATIC SCALING</h3>
+            <span class="regular">Scale from zero to peak with automatic scalability & keep up with customer needs and expectations</span>
+        </div>
+        <div class="flex-item" id="con-2">
+            <img src="rectangle.png" alt="">
+           <h3> IMPROVED PRODUCTIVITY</h3>
+           <span class="regular">Eliminate operational overhead tasks to improve the efficiency of IT infrastructure teams by 80%</span> 
+           
+        </div>
+        
+        
+    
+    </div>
+    <div class="container-2">
+        <div class="flex-item" id="con-1">
+            <img src="triangle.png" alt="">
+            <h3> FASTER RELEASE CYCLES</h3>
+            <span class="regular">Ultra minimal infrastructure tasks to help you develop & deploy your product at lightning speed</span>
+            
+        </div>
+        <div class="flex-item" id="con-2">
+            <img src="rectangle.png" alt="">
+            <h3>LOWER YOUR COST</h3>
+            <span class="regular">Save up to 90% on server cost with pay-as-you-go billing model and never pay for extra storage</span>
+        </div>
+       
+        
+        
+        
+    </div>
+    
+    <div class="container-3">
+        
+        <h4 style="font-size:40px">Why Serverless</h4> <br>
+        <h2  class ="webkit" style="font-size:58px;margin-top:-40px;" >Web Development</h2>
+        <p style="color:blueviolet">(33% average higher developer productivity)***</p>
+    </div>
+    
+   
+
+    
+</body>
+</html>
