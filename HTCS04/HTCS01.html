@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTCS04</title>
+    <style>
+        .container-4-1{
+            width:300px;
+            height:300px;
+        }
+        ul{
+            text-decoration: none;
+            margin-left:-40px;
+        }
+        ul li a{
+            text-decoration: none;
+            
+        }
+        li:hover{
+            background-color: rgb(201, 243, 246);
+        }
+      
+        li{
+            display:inline;
+           padding:8px;
+           padding-left: 20px;
+           padding-right: 20px;
+            
+            border-radius: 25%;
+            border: 1px solid blue;
+            color:black;
+        }
+        .container{
+            display:flex;
+            flex-direction:column;
+            /* border:1px solid black; */
+            justify-content: space-evenly;
+
+        }
+        .container-1 {
+            background-image: url(red.png);
+            background-repeat: no-repeat;
+            /* background-size: 200px;; */
+            background-size: 100px;
+            width: 500px;
+            height: 100px;
+            /* border: 1px solid black; */
+            padding-left: 40px;
+            padding-top: 10px;
+            margin-top: 7%;
+            margin-left: 10%;
+        }
+        .container-2{
+            /* border:1px solid black; */
+            width:40%;
+            margin-left:10%;
+            
+           
+            
+           
+        }
+        .padd{
+            /* spadding:40px; */
+            /* border: 1px solid blue; */
+          
+            border-radius: 28%;
+            padding:10px;
+           
+            border-spacing: 40px;;
+        }
+        .container-3{
+            /* border:1px solid red; */
+            display:flex;
+            display: inline-block;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left:10%;
+        }
+        .red{
+        
+            /* border:1px solid red; */
+            width:100px;
+            margin-top:-372px;
+            margin-left:250px;
+           
+            
+        }
+        .red-1{
+            /* border:1px solid red; */
+            width:100px;
+            margin-top:360px;
+            margin-left:230px;
+           
+            
+        }
+        .container-4{
+            /* display:flex; */
+            /* display: inline-block; */
+            /* border:1px solid red; */
+            /* margin-top:100%; */
+            /* margin-top:-20%; */
+            width:600px;
+            /* margin: auto; */
+            margin-left:45%;
+            margin-top:-60%;
+            
+        }
+        .container-4-1{
+            /* border:1px solid black; */
+            width:520px;
+            /* margin-left:30%;; */
+            padding:20px;
+            margin:auto;
+            /* margin-top:60%; */
+
+        }
+        .horizontal{
+            margin-top:-7px;
+            margin-left:70px
+
+        }
+        #image{
+            background-image: url(triangle1.png);
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+        }
+        .blue{
+            background-image: url(blue.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-x:100%;
+            background-position-y:45% ;
+            background-size: 50px;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-1">
+            <h2>Blogs</h2>
+            
+        </div>
+       
+        <div class="container-2">
+            <ul>
+                <li><a href="#">All</a></li> &nbsp &nbsp
+                <li><a href="#">Tech</a></li> &nbsp &nbsp
+                <li><a href="#">OSL</a></li> &nbsp &nbsp
+                <li><a href="#">Article</a></li>
+                    
+             
+               
+               
+            </ul>
+            
+        </div>
+        
+      
+    </div>
+    <hr style="width:85%;margin-left:0px;">
+    <div class="container-3 blue">
+        <div class="div-1">
+            <img src="engg.png" alt="">
+            <h3>How CredEvolve modernized its IT infrastructure <br>toenable innovation</h3>
+            <span>Article 
+
+                
+            </span>
+            
+        </div>
+        <div class="div-1">
+            <img src="engg.png" alt="">
+            <h3>How CredEvolve modernized its IT infrastructure <br>to enable innovation</h3>
+            <span>OSl</span>
+        </div>
+    </div>
+    <div class="red"></div>
+    <div class="red-1"></div>
+    <div class="container-4">
+        <div class="container-4-1" id="image"><img src="lap.png" alt="">
+            <h3>How CredEvolve modernized its IT <br>infrastructure toenable innovation</h3>
+            <span>Article <hr class="horizontal" style="color:red;width:100px;">
+                
+            </span></div>
+        <div class="container-4-1"><img src="lap.png" alt="">
+            <h3>How CredEvolve modernized its IT <br>infrastructure toenable innovation</h3>
+            <span>Tech <hr  class="horizontal" style="color:red;width:100px;">
+                
+            </span></div>
+        <div class="container-4-1"><img src="lap.png" alt="">
+            <h3>How CredEvolve modernized its IT <br>infrastructure toenable innovation</h3>
+            <span>OSl <hr  class="horizontal" style="color:red;width:100px;">
+                
+            </span></div>
+    </div>
+
+
+
+</body>
+
+</html>
