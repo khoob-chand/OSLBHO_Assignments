@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTCS06</title>
+    <style>
+        @font-face {
+            font-family: extrabold;
+            src: url(extrabold.otf);
+        }
+
+        @font-face {
+            font-family: black;
+            src: url(black.otf);
+        }
+
+        @font-face {
+            font-family: Bold;
+            src: url(Bold.otf);
+        }
+
+        @font-face {
+            font-family: regular;
+            src: url(regular.otf);
+        }
+
+        .navbar {
+            /* border: 1px solid black; */
+            margin-left: 10%;
+
+
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+            /* margin: auto; */
+            font-weight: bold;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black
+                /* / font-weight:bold; */
+
+        }
+
+        .navbar li {
+            float: left;
+
+            list-style: none;
+
+            color: white;
+            margin: 30px 30px;
+            margin-left: 1%;
+
+
+            /* border: 1px solid black; */
+        }
+
+        .line {
+            margin-left: 60%;
+        }
+
+        .container-1 {
+            display: flex;
+            width: 80%;
+            /* border: 1px solid black; */
+            font-size: 25px;
+            margin: auto;
+            /* margin-left: auto; */
+            /* margin: auto; */
+            /* align-items: center; */
+            flex-direction: column;
+        }
+
+
+
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 80%;
+            border-spacing: 20px;
+            margin-top: 20px;
+            background-color: #EBF0F0;
+
+
+        }
+
+        th {
+            border: none;
+        }
+
+        td {
+            border: none;
+        }
+
+        tr {
+            height: 120px;
+        }
+
+        .footer {
+            background-color: #2b2a2a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            margin: auto;
+            height: 100px;
+            margin-top: 2px;
+
+
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            ;
+            /* color:white; */
+            font-size: 12px;
+            ;
+            display: inline;
+            font-size: 30px;
+            ;
+        }
+
+        .footer ul li {
+            display: inline;
+            padding: 5px;
+
+        }
+
+        .para1 {
+            margin: auto;
+            width: 70%;
+
+        }
+
+        header {
+            background-color: #EBF0F0;
+        }
+
+        .webkit {
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+
+        .text {}
+
+        .para2 {
+            /* border: 1px solid red; */
+            display: flex;
+            font-size: 20px;
+            width: 60%;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 5%;
+            padding: 10px;
+
+        }
+
+        .lines {
+            width: 70px;
+            color: red;
+
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        .con {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            background-image: url(red.png);
+            background-repeat: no-repeat;
+            background-size: 100px;
+            width: 60%;
+            margin: auto;
+
+
+        }
+
+        .con-1 {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            justify-content: space-evenly;
+            border-right: 1px solid black;
+            /* width:100%; */
+            padding: 15px;
+            border-right: 1px solid black;
+            /* margin:auto; */
+
+        }
+
+        .con-2,
+        .con-3 {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            width: 60%;
+            margin: auto;
+            /* padding-left: 50px; */
+            /* padding:20px; */
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .con-3 {
+            justify-content: space-evenly;
+            width: 50%;
+            margin-left: 15.5%;
+
+        }
+
+        .right {
+            border-right: 1px solid black;
+            ;
+        }
+
+        .line {
+            width: 70px;
+            color: red;
+            margin-top: -27px;
+
+
+        }
+
+        .textarea {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            width: 80%;
+            margin: auto;
+            background-image: url(red.png);
+            background-repeat: no-repeat;
+            background-size: 150px;
+            padding-left: 50px;
+            background-position-y:30px;;
+
+        }
+
+        .hollow {
+            -webkit-text-fill-color: black;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+            font-size: 40px;
+            ;
+
+
+        }
+        .field{
+            background-color: rgba(82, 80, 80, 0.109);
+            margin-left:auto;
+            border-radius: 20px;;
+            border:1px solid red;
+            color:#A5A5A5;
+            padding:10px;
+
+        }
+        .field-2{
+            margin:auto;
+            width:60%;
+
+        }
+        input{
+            padding:13px;
+            background-color: #A5A5A5;
+            color:white;
+            border-radius: 5px;;
+            /* margin:auto; */
+            text-align: center;
+            font-size: 20px;;
+            width:300px;
+            margin-left:30px;
+            
+        }
+        .name{
+            border:1px solid white;
+            width:70%;
+            margin:auto;
+            margin-top: 100px;;
+            display: flex;
+            justify-content: space-between;
+            /* color:white; */
+            
+
+        }
+        .check{
+            /* border:1px solid red; */
+           
+            display: flex;
+            justify-content: center;
+            width:60%;
+            margin:auto;
+            margin-top: 7%;
+            align-items: center;
+            margin-bottom: 5%;;
+        }
+        .check input{
+            background-color: black;
+           
+            
+        }
+        #mycheckbox{
+            margin-left:-120px;
+        }
+        .foot{
+            color:#A5A5A5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <ul>
+                <li><img src="osl.png" alt="" style="width:100px"></li>
+                <li><a href="#">What we do</a></li>
+                <li><a href="#" style="color:red">Insight</a></li>
+                <li><a href="#">Comapny</a></li>
+                <li><a href="#">Case Study</a></li>
+                <li>
+                    <hr class="lines" style="width:70px;color:red">
+                </li>
+                <li><a href="#" style="color:red">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="para1">
+            <img src="create.png" alt="">
+            <p></p>
+        </div>
+        <div class="para2">
+            <h3 class="text">About &nbsp<span class="webkit">Us</span></h3>
+            <p>With our expert serverless consultative and development <br> approach, eliminate infrastructure
+                management to scale <br> and innovate faster. <br> <br>Contact Us </p>
+
+        </div>
+
+
+
+    </header>
+    <div class="con">
+        <h3>The A Team</h3>
+        <div class="con-1">
+            <div class="right">
+                <h4>Vidhatanand <br>
+                    Founder & CEO </h4><img src="vid.png" alt="" width="200px;">
+                <p>Delivering Digital Experiences <br> with Design, Drupal, and Engineering.<br> Delivering Digital
+                    Experiences with <br>Design, Drupal, and Engineering.</p>
+                <p>Linked in</p>
+                <hr class="line">
+            </div>
+            <div class="right">
+                <h4>Vidhatanand <br>
+                    Founder & CEO </h4><img src="danish.png" alt="" width="200px;">
+                <p>Delivering Digital Experiences <br> with Design, Drupal, and Engineering.<br> Delivering Digital
+                    Experiences with <br>Design, Drupal, and Engineering.</p>
+                <p>Linked in</p>
+                <hr class="line">
+            </div>
+            <div>
+                <h4>Vidhatanand <br>
+                    Founder & CEO </h4><img src="pritish.png" alt="" width="200px;">
+                <p>Delivering Digital Experiences <br> with Design, Drupal, and Engineering.<br> Delivering Digital
+                    Experiences with <br>Design, Drupal, and Engineering.</p>
+                <p>Linked in</p>
+                <hr class="line">
+            </div>
+        </div>
+    </div>
+    <div class="con-2">
+        <div class="right">
+            <h4>Vidhatanand <br>
+                Founder & CEO </h4><img src="vid.png" alt="" width="200px;">
+            <p>Delivering Digital Experiences <br> with Design, Drupal, and Engineering.<br> Delivering Digital
+                Experiences with <br>Design, Drupal, and Engineering.</p>
+            <p>Linked in</p>
+            <hr class="line">
+        </div>
+        <div class="right">
+            <h4>Vidhatanand <br>
+                Founder & CEO </h4><img src="danish.png" alt="" width="200px;">
+            <p>Delivering Digital Experiences <br> with Design, Drupal, and Engineering.<br> Delivering Digital
+                Experiences with <br>Design, Drupal, and Engineering.</p>
+            <p>Linked in</p>
+            <hr class="line">
+        </div>
+        <div>
+            <h4>Vidhatanand <br>
+                Founder & CEO </h4><img src="pritish.png" alt="" width="200px;">
+            <p>Delivering Digital Experiences <br> with Design, Drupal, and Engineering.<br> Delivering Digital
+                Experiences with <br>Design, Drupal, and Engineering.</p>
+            <p>Linked in</p>
+            <hr class="line">
+        </div>
+
+    </div>
+    <div class="con-3">
+        <div class="right">
+            <h4>Vidhatanand <br>
+                Founder & CEO </h4><img src="vid.png" alt="" width="200px;">
+            <p>Delivering Digital Experiences <br> with Design, Drupal, and Engineering.<br> Delivering Digital
+                Experiences with <br>Design, Drupal, and Engineering.</p>
+            <p>Linked in</p>
+            <hr class="line">
+        </div>
+        <div>
+            <h4>Vidhatanand <br>
+                Founder & CEO </h4><img src="vid.png" alt="" width="200px;">
+            <p>Delivering Digital Experiences <br> with Design, Drupal, and Engineering.<br> Delivering Digital
+                Experiences with <br>Design, Drupal, and Engineering.</p>
+            <p>Linked in</p>
+            <hr class="line">
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+    <div class="textarea">Contact Us <h3>Looking to modernize your digital experience with Drupal?<span
+                class="hollow">Let’s start a discussion</span> .</h3>
+               <div class="field-2"><textarea name="" id="" cols="120" rows="10" class="field">Whether it's about services, scope or a custom product you need let our expert advisors connect with you.</textarea></div> 
+               <div class="name">
+                <label for="myname"></label>
+                <input type="text" name="myname" id="myname" placeholder="Name">
+                <label for="mytelephone"></label>
+                <input type="number" name="mytelephone" id="mytelephone" placeholder="Telephone">
+                <label for="myemail"></label>
+                <input type="email" name="myemail" id="myemail" placeholder="E-mail">
+               </div>
+               <div class="check"> Send me on NDA<input type="checkbox" name="" id="mycheckbox" value="">
+                <input type="button" value="Let’s Connect">
+            </div>
+               
+    </div>
+
+
+    <table border="1px solid red">
+        <th colspan="1">For Bussiness</th>
+        <th colspan="1">Organisation</th>
+        <th colspan="1">Services</th>
+        <tr align="center">
+            <td colspan="1">INDIA+91 95602 01510</td>
+            <td>Blog</td>
+            <td>Drupal Staff Augmentation</td>
+        </tr>
+        <tr colspan="1" align="center">
+            <td>EUROPE+44 7492 882927</td>
+            <td>Interview<br>Case Studies</td>
+            <td>Drupal Development <br>Drupal Upgrade and Migration</td>
+        </tr>
+        <tr colspan="1" align="center">
+            <td>USA+1 650 285 5557</td>
+            <td>Team <br>About</td>
+            <td>Performance Tuning and Optimization</td>
+        </tr>
+        <tr colspan="1" align="center">
+            <td>For Careers <br>+1 650 285 5557</td>
+            <td>Careers <br>Contact Us</td>
+            <td>Personalisation & CRO <br>Support & Maintenance </td>
+        </tr>
+        <tr>
+            <td align="center"><img src="target.png" alt=""></td>
+            <td align="center"><img src="review.png" alt=""></td>
+            <td align="center"><img src="good.png" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div class="footer">
+
+                    <ul>
+                        <p class="foot">Did you really read this footer ! Share with us on:</p>
+                        <li><a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9302283%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw0JiXBhCFARIsAOSAKqB1SSODDf4UDuT4ZwJ8z3bYxTMJ_UcR-0F-NQO-v4k_F21gy-wpoWUaAouOEALw_wcB"
+                                style="color:yellow" target="_blank">facebook</a></li>
+                        <li><a href="https://www.google.com/" target="_blank" style="color:blue">twitter</a></li>
+                        <li> <a href="https://www.instagram.com/ " style="color:red" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+</html>
