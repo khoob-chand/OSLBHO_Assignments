@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 10px 50px;
+
+        }
+
+        .red {
+            color: red;
+        }
+
+        td {
+            padding: 3px;
+            width: 50px;
+            /* margin:20px; */
+        }
+
+        table {
+            padding: 20px 50px;
+            width: 20%;
+            height: 20%;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 15px;
+            ;
+
+        }
+
+        fieldset {
+            width: 20%;
+            margin: auto;
+
+        }
+
+        .red1,
+        .red2,
+        .red3,
+        .red4 {
+            color: red;
+            font-size: 15px;
+        }
+
+        .blue {
+            width: 250px;
+            background-color: aqua;
+            font-size: 20px;
+        }
+
+        .blue:hover {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the best page on Internet</h1>
+    <form action="#" name="myform" onsubmit="return validate()" method="post">
+        <fieldset>
+            <table align="center">
+
+
+                <tr class="mar">
+                    <th>Register Form</th>
+                </tr>
+                <tr>
+                    <td>Name:</td><br>
+                </tr>
+                <tr>
+                    <td><input type="text" name="fname" id=""></td>
+
+
+                </tr>
+                <tr>
+                    <td class="red1 errorchecking"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td><br>
+
+
+                </tr>
+                <tr>
+                    <td><input type="email" name="femail" id=""></td>
+
+                </tr>
+                <tr>
+                    <td class="red2 errorchecking"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td><br>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" id=""></td>
+
+                </tr>
+                <tr>
+                    <td class="red3 errorchecking"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td><br>
+                </tr>
+                <tr>
+                    <td><input type="password" name="cpassword" id=""></td>
+
+                </tr>
+                <tr>
+                    <td class="red4 errorchecking"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" value="Submit" class="blue"></td>
+                </tr>
+            </table>
+    </form>
+    </fieldset>
+
+    <script>
+        function errorfree() {
+            var error = document.getElementsByClassName("errorchecking");
+            for (let item of error) {
+                item.innerHTML = "";
+            }
+
+        }
+        function seterror(id, error) {
+            console.log(id, error)
+            document.querySelector(id).innerHTML = error;
+            //   document.querySelector(id).innerHTML=error;
+            //   document.querySelector(id).innerHTML=error;
+
+
+            //   console.log(ele);
+        }
+        function validate() {
+
+            errorfree();
+            // console.log("form inside")
+            var fname = document.forms["myform"]["fname"].value;
+            var email = document.forms["myform"]["femail"].value;
+            var password = document.forms["myform"]["password"].value;
+            var cpassword = document.forms["myform"]["cpassword"].value;
+  
+            console.log(fname);
+            console.log(fname);
+            console.log(email);
+            console.log(password);
+            console.log(cpassword);
+            if (fname.length < 5) {
+                seterror(".red1", "Username must atleast 5 character");
+
+                return false;
+
+            }
+            if (email.length > 15) {
+                seterror(".red2", "Invalid Email");
+                return false;
+
+            }
+            if (password.length < 5) {
+                seterror(".red3", "Invalid password");
+                return false;
+            }
+            if (cpassword != password) {
+                seterror(".red4", "Password Not Match");
+                return false;
+            }
+          
+
+
+
+
+            return true;
+
+            
+        }
+
+    </script>
+
+</body>
+
+</html>
