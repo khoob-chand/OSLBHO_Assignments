@@ -10,7 +10,7 @@ function replicate(a,b){
 console.log(replicate(3,5));
 
 
-OR
+//OR
 
 function replicate(a,b){
     array=[];
