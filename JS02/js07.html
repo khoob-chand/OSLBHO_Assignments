@@ -130,56 +130,88 @@
 
         }
         function seterror(id, error) {
-            console.log(id, error)
             document.querySelector(id).innerHTML = error;
-            //   document.querySelector(id).innerHTML=error;
-            //   document.querySelector(id).innerHTML=error;
-
-
-            //   console.log(ele);
         }
+
+
         function validate() {
 
+            let flag = true;
+
             errorfree();
+
             // console.log("form inside")
             var fname = document.forms["myform"]["fname"].value;
             var email = document.forms["myform"]["femail"].value;
             var password = document.forms["myform"]["password"].value;
             var cpassword = document.forms["myform"]["cpassword"].value;
   
-            console.log(fname);
-            console.log(fname);
-            console.log(email);
-            console.log(password);
-            console.log(cpassword);
-            if (fname.length < 5) {
+
+            
+            
+                
+                if (fname.length < 5) {
                 seterror(".red1", "Username must atleast 5 character");
 
-                return false;
+                flag = false;
 
             }
-            if (email.length > 15) {
+           if (email.length > 15||email=="") {
                 seterror(".red2", "Invalid Email");
-                return false;
+                flag = false;
 
             }
-            if (password.length < 5) {
+            if (password.length <5) {
                 seterror(".red3", "Invalid password");
-                return false;
+                // seterror(".red4", "Password Not Match");
+            flag = false;
             }
-            if (cpassword != password) {
+            if(cpassword != password) {
                 seterror(".red4", "Password Not Match");
-                return false;
+                flag = false;
             }
           
 
+           
 
-
-
-            return true;
+            return flag;
 
             
         }
+
+
+
+
+
+        // function username(){
+                
+        //         if (fname.length < 5) {
+        //          seterror(".red1", "Username must atleast 5 character");
+        //         //  return false;
+        //         }
+        //     }  
+        //     function email(){
+        //         if (email.length > 15||email.value=="") {
+        //          seterror(".red2", "Invalid Email");
+        //         //  return false;
+        //         }
+
+        //     }  
+        //     function password(){
+        //         if(password.length<5&&password.value=='')
+        //         {
+        //         seterror(".red3", "Invalid password");    
+        //         // return false;
+        //         }
+        //     }
+        //     function confirmpassword(){
+        //         if(cpassword != password) {
+        //         seterror(".red4", "Password Not Match");
+        //         // return false;
+        //     }
+        // }
+
+
 
     </script>
 
