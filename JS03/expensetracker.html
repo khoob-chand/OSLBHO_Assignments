@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            margin:0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #balance{
+            margin-top: -15px;;
+        }
+        .container{
+            border:1px solid red;
+            margin:30px auto;
+            width:20%;
+        }
+        .income-expense{
+            display: flex;
+            margin:20px ;
+            padding:20px;
+            background-color: aliceblue;
+        }
+        .income-expense >div{
+            flex:1;
+            text-align:center
+        
+        }
+        .income-expense >div:first-of-type{
+            border-right: 1px solid blueviolet;
+        }
+        h4{
+            text-transform: uppercase;
+        }
+        h3{
+            border-bottom:1px solid black;
+            margin-bottom: 10px;;
+        }
+        #money-plus{
+            color:green;
+        }
+        #money-minus{
+            color:red;
+        }
+        input[type="text"],input[type="number"]{
+            display:block;
+            width:94%;
+            padding:10px;
+            margin:10px 0px;
+            font-size:20px;
+            border-radius: 20px;
+          
+        }
+        label{
+            font-size:20px;
+        }
+        .btn1{
+            width:100%;
+            padding:10px;
+            border-radius: 10px;;
+            background-color: rgb(0, 255, 26);
+            font-size: 20px;;
+            
+        }
+        .btn2{
+            width:100%;
+            padding:10px;
+            border-radius: 10px;;
+            background-color: rgb(233, 92, 32);
+            font-size: 20px;;
+
+        }
+        .list-item{
+            list-style-type:none;
+            margin-bottom: 20px;;
+            width:100%;
+            margin-left:-40px;
+           
+
+        }
+
+        .list-item li{
+            background-color: aliceblue;
+            padding:10px;
+            display: flex;
+            justify-content: space-between;
+            /* margin:10px; */
+        }
+        
+        .cancel-item{
+            cursor: pointer;
+            background-color: red;
+            color:white;
+            font-size: 20px;;
+            margin-left:5%;
+            /* position:absolute;
+            top:46.5%;
+            left:40%;; */
+            /* transform: translate(-100%,-50%);
+            opacity: 0; */
+            /* transition: opacity 0.5 ease; */
+        }
+        .success{
+            cursor: pointer;
+            background-color: rgb(60, 226, 39);
+            color:white;
+            font-size: 20px;;
+            /* margin-left:-2%; */
+        }
+        /* / */
+        .bt{
+            margin:0px 20px;
+        }
+        #clear{
+            width:100%;
+            background-color: rgb(222, 207, 236);
+            font-size: 20px;
+            font-weight:bold;
+            cursor: pointer;
+
+        }
+        #clear:hover{
+            background-color: rgb(239, 108, 108);
+        }
+    </style>
+</head>
+<body>
+    <h2>Expense traceker</h2>
+    <div class="container">
+        <h4>Your balance</h4>
+        <h1 id="balance">$0.00</h1>
+        <div class="income-expense">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus">+$0.00</p>
+            </div>
+            <div >
+                <h4>Expense</h4>
+                <p id="money-minus">-$0.00</p>
+            </div>
+        </div>
+        <h3>History</h3>
+        <ul  id="list-item" class="list-item" >
+            <li><button id="clearall">Clear All</button></li>
+            
+            <li> 
+                <span class="cross cancel-item success "></span>
+                <button class="cancel-item success"> x</button> </li> 
+                
+
+              
+                   
+                
+        </ul>
+        <button class="btn2" id="clear">Clear History Item</button>
+        <h3>Add New Transaction</h3>
+        <form action="" id="form" onsubmit="return false">
+            <div class="text1">
+                <label for="text">Text</label>
+                <input type="text" name="mytext" id="text" placeholder="Enter Your Text..">
+            </div>
+            <div class="text2">
+                <label for="amount">Amount</label>
+                <input type="number" name="myamount" id="amount" placeholder="Enter Your Amount..">
+            </div>
+            <button class="btn1" id="income">Add Income</button>
+            <button class="btn2" id="expense">Add Expense</button>
+            
+        </form>
+    </div>
+    <script>
+// let setbal=0;
+//  let setincome=0;
+//  let setxpense=0;
+        let array=[];
+        let balance=document.getElementById('balance');
+        let moneyplus=document.getElementById("money-plus");
+        let moneyminus=document.getElementById('money-minus');
+        let transact=document.getElementById('list-item');
+        
+        const text=document.getElementById('text');
+        const amount=document.getElementById('amount');
+        const income=document.getElementById('income');
+        const xpense=document.getElementById('expense');
+        const clearbutton=document.getElementById('clear');
+       let setbal= balance.innerHTML=localStorage.getItem('setbalance');
+        let setmoney=moneyplus.innerHTML=localStorage.getItem('setincome');
+       let setexpense= moneyminus.innerHTML=localStorage.getItem('setexpense');
+        let transa =transact.innerHTML=localStorage.getItem('settrans');
+        console.log("$$$$$$$$$$$$$$"+setbal)
+        
+
+   
+   var state={
+    balance:80,
+    income:80,
+    expense:670,
+    // transaction:[//{name:'salary',amount:5000,type:'income'},
+   // {name:'grocery',amount:9000,type:'expense'},
+    //{name:'Buy shoes',amount:7000,type:'expense'}]
+    transaction :[{name:'',amount:'',type:''}]
+    
+   }
+ function init(){
+    updatestate();
+    render();
+    initlistener();
+   
+   
+ }
+ init();
+ 
+ function initlistener(){
+    income.addEventListener('click',onaddincome);
+    xpense.addEventListener('click',onaddexpense);
+ }
+
+ function onaddincome(){
+    var name=text.value;
+    var amt=amount.value;
+    console.log(text.value);
+    if(name!==''&&amt!=''){
+        console.log(text.value);
+    var addname={name:text.value,amount:parseInt(amount.value),type:'income'}
+    state.transaction.push(addname);
+  
+    }
+    else {
+        alert("Enter valid input");
+    }
+   name="";
+   amt="";
+   console.log(setbal);
+    updatestate();
+    render();
+
+    
+    // init();
+    
+    
+ }
+ function onaddexpense(){
+    var name=text.value;
+    var amt=amount.value;
+    if(name!=''&&amt!=''){
+        console.log(amount.value);
+    var addname={name:text.value,amount:parseInt(amount.value),type:'expense'}
+    state.transaction.push(addname);
+    }
+    else {
+        alert('enter valid value');
+    }
+   
+    updatestate();
+    render();
+    
+
+    // init();
+  
+
+ }
+ 
+ 
+ function render(){
+    console.log('init');
+     setbal=balance.innerHTML=(`$${state.balance}`);
+     setincome=moneyplus.innerHTML=`$${state.income}`;
+     setxpense=moneyminus.innerHTML=`$${state.expense}`;
+    
+
+    
+    var createli;
+    
+    for(var i=1;i<state.transaction.length;i++){
+        var item=state.transaction;
+       
+         createli=document.createElement('li');
+       
+        createli.append(state.transaction[i].name);
+        transact.appendChild(createli);
+        var containerel=document.createElement('div');
+        var createspan =document.createElement('span');
+        var buttonele=document.createElement('button');
+        buttonele.innerHTML="X";
+        if(state.transaction[i].type==="income"){
+            createspan.classList.add("success");
+        }
+        else if(state.transaction[i].type==="expense"){
+            createspan.classList.add("cancel-item");
+        }
+        
+        console.log('hello');
+       
+         createspan.innerHTML=`$${state.transaction[i].amount}`;
+              
+        containerel.appendChild(createspan);
+       
+        
+
+        createli.appendChild(containerel);
+    
+    // localStorage.setItem('transaction',transact.value);
+    
+       
+    }
+  
+    
+    set(setincome,setxpense);
+ }
+ function updatestate(){
+    console.log("---------------"+setbal);
+
+    var balance=0,income=0,expense=0,item;
+    transact.innerHTML="";
+    for(let i=0;i<state.transaction.length;i++){
+        if(state.transaction[i].type==="income"){
+        income=income+state.transaction[i].amount;
+        }
+   
+      else if(state.transaction[i].type==="expense"){
+            expense=expense+state.transaction[i].amount;
+      }
+       
+  
+    }
+    balance=income-expense;
+    console.log(income);
+    console.log(expense);
+    console.log(balance);
+   
+    state.balance=balance;
+    state.income=income;
+    state.expense=expense;
+    localStorage.setItem('setbalance',"$"+balance)
+    // set(setincome,setxpense);
+    
+}
+clearbutton.addEventListener('click',removehistory);
+function removehistory(){
+    alert("Are you sure want to delete history");
+    state.transaction=[];
+    transact.innerHTML='';
+
+    balance=0;
+    moneyplus=0;
+    moneyminus=0;
+    
+    
+}
+   
+
+    function set(setincome,setxpense){
+    // localStorage.setItem('balance',balance);
+    localStorage.setItem('setincome',setincome);
+    localStorage.setItem('setexpense',setxpense);
+    localStorage.setItem('settrans',JSON.stringify((state.transaction)));
+    }
+    // console.log("---------------"+setbal);
+   
+
+    </script>
+    
+</body>
+</html>
