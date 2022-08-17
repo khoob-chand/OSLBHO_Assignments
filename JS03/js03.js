@@ -4,22 +4,25 @@ function replicate(a,b){
         return [];
 
     }
+   
     return [b].concat(replicate(a-1,b));
 
 }
-console.log(replicate(3,5));
+
 
 
 //OR
 
-function replicate(a,b){
+function replicate1(a,b){
     array=[];
     
     for(let i=0;i<a;i++){
         array.push(b);
         
     }
-    console.log(array);
+  
+    return array;
 
 }
-replicate(3,5);
+console.log(replicate(3,5));
+console.log(replicate1(3,5));

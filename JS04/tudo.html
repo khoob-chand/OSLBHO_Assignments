@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding:8px;
+            border:1px solid rgb(140, 140, 240);
+            font-size:20px;
+        }
+        .btn{
+            margin-top:2%;
+            width:40%;
+            border:none;
+            font-size: 20px;;
+            color:red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding:6px;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border:1px solid red;
+            width:30%;
+            margin:10% auto;
+            height:60vh;
+            background-color:rgb(237, 229, 229);
+        }
+        .submitbtn{
+            padding:6px;
+            font-size: 20px;
+            background-color: aqua;
+            cursor:pointer;
+        }
+        /* .submitbtn:hover{
+
+        } */
+        @media(min-width:702px)and(max-width:1300px){
+         input{
+                
+                width:50px;
+                padding:7px;
+                font-size:10px;
+                
+            }
+            #container{
+                width:200px;
+                height:300px;          
+                
+            }
+            .btn{
+                padding:7px;
+                font-size:15px;
+            }
+        }
+     @media(min-width:200px)and (max-width:700px){
+            input{
+                width:200px;
+                font-size: 15px;
+                
+            }
+            #container{
+                width:500px;
+                height:200px;
+            }
+            .btn{
+                padding:5px;
+                font-size:15px;
+            }
+        } 
+         ul{
+            border:1px solid gray;
+            background-color: aliceblue;
+            width:80%;
+            list-style: none;
+            
+            
+         }
+         ul li{
+            padding: 10px 0px;;;
+            position: relative;
+         }
+         .close{
+            position: absolute;
+           top:0px;
+           right:10px;
+            font-size:20px;
+            /* font-weight: bold; */
+            padding: 10px 0px;;;
+            margin-right:10px;
+         }
+         .close:hover{
+            cursor: pointer;
+            color:red;
+         }
+     #btn{
+        position:absolute;
+        top:10px;
+        right:80px;
+        
+        
+     }
+     .btn:hover{
+        background-color: rgb(95, 247, 72);
+        cursor:pointer;
+        color:green;
+     }
+     .container{
+        display:flex;
+        justify-content:space-evenly;
+        border:1px solid black;
+     }
+
+    
+     .edit{
+        width:100px;
+        color:red;
+        padding:6px;
+     }
+     .edit:hover{
+        background-color: green;
+        color:white;
+        font-weight: bold;;
+        cursor: pointer;
+
+     }
+     .items{
+        width:430px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        margin:10px;
+        padding:3px;
+        background-color: bisque;
+     }
+     .delete{
+        margin-top:10px;
+        padding:6px;
+     }
+     .delete:hover{
+        background-color: rgb(247, 15, 11);
+        cursor: pointer;
+        font-weight: bold;
+        color:white;
+
+     }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>TO DO items</h2>
+        <label for="tudo"></label>
+        <div id="inputtag">
+            <input type="text" name="" class="input" placeholder="Add a item">
+            <button class="submitbtn" onclick="addlistitem()">Add Item</button>
+        
+        </div>
+        <!-- <ul id="list">
+           <li>List1 </li>
+                <li>List2</li>
+       
+            
+        </ul> -->
+        <div class="itemList">
+        <div class="items">
+            <p>hello</p>
+            <div class="container">
+                <button>EDIT</button>
+                <button>X</button>
+            </div>
+        </div>
+        </div>
+        
+        <button class="btn" onclick="clearall()">Clear item</button>
+     
+    </div>
+    <script>
+        let check=false;
+        let editIndex=0;
+        let array=[];
+        let local=JSON.parse(localStorage.getItem('name'));
+        if(local!=null){
+            array=local;
+            display();
+        }
+        function addlistitem(){
+           let adddata= document.getElementsByClassName('input')[0].value;
+          
+           if(check){
+            array[editIndex]=adddata;
+            datastorage(array);
+           }else{
+            array.push(adddata);
+            datastorage(array);
+           }
+            display();
+          
+        }
+
+        function display(){
+            document.querySelector('.itemList').innerHTML='';
+
+
+            for(let i=0;i<array.length;i++){
+            document.querySelector('.itemList').innerHTML+=` <div class="items">
+            <p>${array[i]}</p>
+            <div class=aaa>
+                <button  class="edit" id=${i}>edit</button>
+                <button class="delete"  id=${i}>X</button>
+            </div>
+        </div>`
+        // console.log(array[i]);
+         }
+         let edit=document.getElementsByClassName('edit');
+         let deletebutton=document.getElementsByClassName('delete');
+         for(let i=0;i<array.length;i++){
+            edit[i].addEventListener("click",function()
+            {
+                editdata(array,i);
+            } )
+
+            deletebutton[i].addEventListener("click",function()
+            {
+                deletedata(array,i);
+            } )
+
+        }
+
+        }
+        function editdata(arr,index){
+            document.getElementsByClassName('input')[0].value=arr[index];
+            // console.log("string");
+            check=true;
+            editIndex=index;
+        }
+
+        function datastorage(arr){
+            localStorage.setItem('name',JSON.stringify(arr));
+        }
+        function clear(){
+            array=[];
+
+            
+        }
+        function clearall(){
+            
+            localStorage.removeItem('name');
+            // document.getElementsByClassName('btn').innerHTML="";
+            array=[];
+            display();
+            
+        }
+       
+       function deletedata(arr,i){
+        arr.splice(i,1);
+        localStorage.setItem('name',JSON.stringify(arr));
+        display();
+
+       }
+            
+      
+       
+
+
+
+//         let k=0;
+//         let arr=[];
+//         var mynodelist=document.getElementsByTagName("li");
+//         var i;
+//         for(i=0;i<mynodelist.length;i++){
+//             var spantag=document.createElement("span");
+//             var spantag2=document.createElement("span");
+//             var txt=document.createTextNode("x");
+//             var btn=document.createElement("button");
+//             btn.innerHTML="EDIT"
+//             spantag.className="close";
+//             btn.id=i;
+//             spantag.appendChild(txt);
+//             spantag2.appendChild(btn);
+            
+//             mynodelist[i].appendChild(spantag);
+//             mynodelist[i].appendChild(spantag2);
+
+            
+//             // console.log(mynodelist[i]);
+//             // console.log(arr);
+            
+//         }
+//         var close = document.getElementsByClassName("close");
+// var i;
+// for (i = 0; i < close.length; i++) {
+//   close[i].onclick = function() {
+//     var div = this.parentElement;
+//     // console.log(div);
+//     div.style.display = "none";
+//   }
+// }
+//    function addlistitem(){
+//     var li_item=document.createElement("li");
+//     var input_value=document.getElementById("tudo").value;
+
+//     arr.push(input_value);
+    
+    
+//     var textnode=document.createTextNode(input_value);
+//     li_item.appendChild(textnode);
+//     document.getElementById("list").appendChild(li_item);
+//     var btn=document.createElement("button");
+//             btn.innerHTML="EDIT";
+//             btn.id=k;
+//             k++;
+//     var spantag=document.createElement("span");
+//     var spantag2=document.createElement("span");
+//             var txt=document.createTextNode("x");
+//             spantag.className="close";
+//             spantag2.id="btn";
+
+//             spantag.appendChild(txt);
+//             spantag2.appendChild(btn);
+            
+//             li_item.appendChild(spantag);
+//             li_item.appendChild(spantag2);
+            
+            
+
+//             for (i = 0; i < close.length; i++) {
+//                 close[i].onclick = function() {
+//                 var div = this.parentElement;
+//                 //  console.log(div);
+//                  div.style.display = "none";
+//   }
+// }
+// btn.addEventListener("click",function(e){
+
+// e.target.value=`${input_value}`;
+
+// document.getElementById("tudo").value=e.target.value;
+
+// let index=e.target.id;
+// // arr[index]='kake';
+
+// console.log(arr);
+// // li_item[0].push(arr[index]);
+// edit(index);
+
+// })
+
+
+
+//    }
+//    function clear_all_item(){
+//   var list=document.getElementById("list");
+// //   list.remove();
+//   list.innerHTML="";
+ 
+  
+// }
+// function edit(index){
+    
+//     document.getElementById(``).innerText='yogesh';
+    
+
+// }
+    
+    
+
+
+
+   
+    </script>
+    
+</body>
+</html>
