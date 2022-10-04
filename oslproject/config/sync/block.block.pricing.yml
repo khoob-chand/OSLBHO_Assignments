@@ -1,0 +1,25 @@
+uuid: 0ac912bf-089c-401c-8f9c-0140a40ae756
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:pricing:00400568-fecc-4e9a-80ad-380fce47957b'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: pricing
+theme: bootstrap
+region: featured_bottom_first
+weight: -4
+provider: null
+plugin: 'block_content:00400568-fecc-4e9a-80ad-380fce47957b'
+settings:
+  id: 'block_content:00400568-fecc-4e9a-80ad-380fce47957b'
+  label: pricing
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

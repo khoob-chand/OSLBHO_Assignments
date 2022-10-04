@@ -1,0 +1,30 @@
+uuid: bfacf8a9-c7aa-4e5d-82a5-805d94478c63
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:webform_block:a44ab6b0-8c69-4068-99aa-7740cc009fe5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: llsemailsignup
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:a44ab6b0-8c69-4068-99aa-7740cc009fe5'
+settings:
+  id: 'block_content:a44ab6b0-8c69-4068-99aa-7740cc009fe5'
+  label: 'LLS EMAIL SIGNUP'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /about

@@ -1,0 +1,25 @@
+uuid: 8e2ee361-1573-40b9-b3ca-f89fcecbe092
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer1:d0ce6c3d-8ba4-4b22-b5eb-39cacc8d59f9'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: footer
+theme: bartik
+region: footer_fifth
+weight: -7
+provider: null
+plugin: 'block_content:d0ce6c3d-8ba4-4b22-b5eb-39cacc8d59f9'
+settings:
+  id: 'block_content:d0ce6c3d-8ba4-4b22-b5eb-39cacc8d59f9'
+  label: 'HELPLINE SECTION'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

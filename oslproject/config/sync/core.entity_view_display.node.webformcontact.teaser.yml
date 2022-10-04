@@ -1,0 +1,23 @@
+uuid: 17e01e5e-efed-4236-8705-71b829a8f8b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webformcontact.field_webpara
+    - node.type.webformcontact
+  module:
+    - user
+id: node.webformcontact.teaser
+targetEntityType: node
+bundle: webformcontact
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_webpara: true

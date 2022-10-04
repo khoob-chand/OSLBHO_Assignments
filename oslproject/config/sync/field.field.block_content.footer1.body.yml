@@ -1,0 +1,27 @@
+uuid: 5e0e1407-09a3-4be9-8369-733862247cec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer1
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.footer1.body
+field_name: body
+entity_type: block_content
+bundle: footer1
+label: Body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: "<p>Helpline 1800 2300</p>\r\n\r\n<p>(+1800 2300 384)</p>\r\n\r\n<p>Drupal (Self-Reliant Initiatives through Joint Action) Copyrights © 2019 All Rights Reserved.</p>\r\n"
+    summary: ''
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,20 @@
+.parent_foot{
+    display: flex;;
+    justify-content: space-around;
+    align-items: center;
+    background:#fff;
+}
+.foot{
+    color:black;
+    
+}
+.foot_2 span a{
+    /* font-size:20px; */
+    filter:grayscale(5);
+    opacity: 0.4;
+    /* border-radius:30px; */
+    padding:2px;
+}
+.parent_foot .foot_2 span a:hover{
+    background-color: goldenrod;
+}

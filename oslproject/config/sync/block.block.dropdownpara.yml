@@ -1,0 +1,25 @@
+uuid: a6c5165d-cd5e-4232-81f2-43d172b78617
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:downparagraph:02c38bc2-69a7-462d-b007-efede5ff1c51'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: dropdownpara
+theme: bootstrap
+region: featured_bottom_first
+weight: -21
+provider: null
+plugin: 'block_content:02c38bc2-69a7-462d-b007-efede5ff1c51'
+settings:
+  id: 'block_content:02c38bc2-69a7-462d-b007-efede5ff1c51'
+  label: dropdownpara
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

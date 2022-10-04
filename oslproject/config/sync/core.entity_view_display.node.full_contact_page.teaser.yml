@@ -1,0 +1,29 @@
+uuid: 6e75e63d-2568-4d8f-a2fb-afcc5f5f5cb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.full_contact_page.field_para_1
+    - field.field.node.full_contact_page.field_para_2
+    - field.field.node.full_contact_page.field_para_3
+    - field.field.node.full_contact_page.field_para_4
+    - node.type.full_contact_page
+  module:
+    - user
+id: node.full_contact_page.teaser
+targetEntityType: node
+bundle: full_contact_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_para_1: true
+  field_para_2: true
+  field_para_3: true
+  field_para_4: true

@@ -1,0 +1,31 @@
+uuid: 2fdfc9bf-0ee9-47e1-ac4c-c0fd566b388c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.downparagraph.field_para
+    - field.field.paragraph.downparagraph.field_textparagraph
+    - paragraphs.paragraphs_type.downparagraph
+  module:
+    - text
+id: paragraph.downparagraph.default
+targetEntityType: paragraph
+bundle: downparagraph
+mode: default
+content:
+  field_para:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_textparagraph:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,62 @@
+uuid: d1e017e7-d9dc-4366-9025-50d25719bc3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pricing_section.body
+    - field.field.node.pricing_section.field_name
+    - field.field.node.pricing_section.field_number
+    - field.field.node.pricing_section.field_pricelink
+    - node.type.pricing_section
+  module:
+    - link
+    - text
+    - user
+id: node.pricing_section.default
+targetEntityType: node
+bundle: pricing_section
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_pricelink:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true

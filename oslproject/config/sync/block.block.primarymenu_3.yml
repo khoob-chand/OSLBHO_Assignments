@@ -1,0 +1,25 @@
+uuid: 6210a727-bc7e-4c72-b12e-b156717570d2
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.primarymenu
+  module:
+    - system
+  theme:
+    - bootstrap
+id: primarymenu_3
+theme: bootstrap
+region: header
+weight: -23
+provider: null
+plugin: 'system_menu_block:primarymenu'
+settings:
+  id: 'system_menu_block:primarymenu'
+  label: primarymenu
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 3
+  expand_all_items: false
+visibility: {  }

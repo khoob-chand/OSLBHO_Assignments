@@ -1,0 +1,23 @@
+uuid: 5282a4f3-7668-4d9c-b6d2-e23d86eca84f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.newsletter.field_link
+field_name: field_link
+entity_type: block_content
+bundle: newsletter
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

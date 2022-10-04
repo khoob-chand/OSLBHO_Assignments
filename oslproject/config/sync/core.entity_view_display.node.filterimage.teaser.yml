@@ -1,0 +1,23 @@
+uuid: 38abc8df-74db-4378-b29a-44a4be73a082
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.filterimage.field_filter_image
+    - node.type.filterimage
+  module:
+    - user
+id: node.filterimage.teaser
+targetEntityType: node
+bundle: filterimage
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_filter_image: true

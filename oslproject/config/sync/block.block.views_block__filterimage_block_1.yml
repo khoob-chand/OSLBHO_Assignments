@@ -1,0 +1,24 @@
+uuid: efba6267-4ed6-4d6e-b32d-816972770fea
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.filterimage
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__filterimage_block_1
+theme: bootstrap
+region: featured_bottom_first
+weight: -8
+provider: null
+plugin: 'views_block:filterimage-block_1'
+settings:
+  id: 'views_block:filterimage-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

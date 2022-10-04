@@ -1,0 +1,49 @@
+uuid: 76ccce54-c757-4fa6-99fc-65033fc4d9d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_para_2
+    - node.type.full_contact_page
+    - paragraphs.paragraphs_type.email
+  module:
+    - entity_reference_revisions
+id: node.full_contact_page.field_para_2
+field_name: field_para_2
+entity_type: node
+bundle: full_contact_page
+label: para_2
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      email: email
+    negate: 0
+    target_bundles_drag_drop:
+      call_us:
+        weight: 8
+        enabled: false
+      contact:
+        weight: 9
+        enabled: false
+      description:
+        weight: 10
+        enabled: false
+      downparagraph:
+        weight: 11
+        enabled: false
+      email:
+        weight: 12
+        enabled: true
+      faq:
+        weight: 13
+        enabled: false
+      pricepara:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

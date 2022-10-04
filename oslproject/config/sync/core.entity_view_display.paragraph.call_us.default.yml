@@ -1,0 +1,42 @@
+uuid: 1dc44e87-bdbd-4f54-b80e-5fdf22d2c6c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.call_us.field_call_us_number
+    - field.field.paragraph.call_us.field_call_us_plain
+    - field.field.paragraph.call_us.field_icon_1
+    - paragraphs.paragraphs_type.call_us
+  module:
+    - fontawesome
+id: paragraph.call_us.default
+targetEntityType: paragraph
+bundle: call_us
+mode: default
+content:
+  field_call_us_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_call_us_plain:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icon_1:
+    type: fontawesome_icon_formatter
+    label: above
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

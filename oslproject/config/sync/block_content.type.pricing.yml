@@ -1,0 +1,8 @@
+uuid: 4879d179-2706-4153-8c59-330ee305c0bc
+langcode: en
+status: true
+dependencies: {  }
+id: pricing
+label: pricing
+revision: 0
+description: ''

@@ -1,0 +1,20 @@
+uuid: 1bd97851-cc0a-412e-9fe8-5ab383a08579
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - bartik
+id: addtoanybuttons
+theme: bartik
+region: footer_fifth
+weight: -4
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'Follow Us'
+  label_display: visible
+  provider: addtoany
+visibility: {  }

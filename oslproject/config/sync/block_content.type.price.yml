@@ -1,0 +1,8 @@
+uuid: 36ff897e-b832-4087-a888-68490c3634e0
+langcode: en
+status: true
+dependencies: {  }
+id: price
+label: price
+revision: 0
+description: ''

@@ -1,0 +1,36 @@
+uuid: 026f646c-66a4-49fd-b560-693a91c8bfc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.downparagraph.field_para
+    - field.field.paragraph.downparagraph.field_textparagraph
+    - paragraphs.paragraphs_type.downparagraph
+  module:
+    - text
+id: paragraph.downparagraph.default
+targetEntityType: paragraph
+bundle: downparagraph
+mode: default
+content:
+  field_para:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_textparagraph:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

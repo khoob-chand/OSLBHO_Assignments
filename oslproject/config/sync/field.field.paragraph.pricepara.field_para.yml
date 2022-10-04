@@ -1,0 +1,19 @@
+uuid: ec2d38e5-8b4b-4cd0-8df6-69bd90e709b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para
+    - paragraphs.paragraphs_type.pricepara
+id: paragraph.pricepara.field_para
+field_name: field_para
+entity_type: paragraph
+bundle: pricepara
+label: para
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

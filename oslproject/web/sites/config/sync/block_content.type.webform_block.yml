@@ -1,0 +1,8 @@
+uuid: 91413b5d-4049-4d54-8239-b1c9c3111b74
+langcode: en
+status: true
+dependencies: {  }
+id: webform_block
+label: 'LLS EMAIL SIGNUP'
+revision: 0
+description: ''

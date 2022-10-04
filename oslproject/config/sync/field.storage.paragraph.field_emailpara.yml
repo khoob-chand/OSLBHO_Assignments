@@ -1,0 +1,19 @@
+uuid: 7985a038-9dd2-434a-9fd5-5335e642b846
+langcode: en
+status: true
+dependencies:
+  module:
+    - fontawesome
+    - paragraphs
+id: paragraph.field_emailpara
+field_name: field_emailpara
+entity_type: paragraph
+type: fontawesome_icon
+settings: {  }
+module: fontawesome
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

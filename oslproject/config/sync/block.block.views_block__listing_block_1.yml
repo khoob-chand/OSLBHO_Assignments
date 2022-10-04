@@ -1,0 +1,24 @@
+uuid: e1627044-ff1d-4b16-b18f-b55460a0d7ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.listing
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__listing_block_1
+theme: bootstrap
+region: featured_bottom_first
+weight: -23
+provider: null
+plugin: 'views_block:listing-block_1'
+settings:
+  id: 'views_block:listing-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

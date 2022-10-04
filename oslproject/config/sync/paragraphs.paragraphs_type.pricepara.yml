@@ -1,0 +1,10 @@
+uuid: f4b1393b-c708-4169-980f-5cdef70edf7a
+langcode: en
+status: true
+dependencies: {  }
+id: pricepara
+label: pricepara
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

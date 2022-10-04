@@ -1,0 +1,24 @@
+uuid: ed9ba417-b60d-41a3-86b7-784ff565707f
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.graysaclelogo
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__graysaclelogo_block_1_2
+theme: bootstrap
+region: content
+weight: -31
+provider: null
+plugin: 'views_block:graysaclelogo-block_1'
+settings:
+  id: 'views_block:graysaclelogo-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 39b196d8-0c5e-4d67-9eac-ac50774663b8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:grayscale:9474448c-21cb-404a-a356-e74fcc52a5bb'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: grayscale
+theme: bootstrap
+region: content
+weight: -28
+provider: null
+plugin: 'block_content:9474448c-21cb-404a-a356-e74fcc52a5bb'
+settings:
+  id: 'block_content:9474448c-21cb-404a-a356-e74fcc52a5bb'
+  label: grayscale
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

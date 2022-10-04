@@ -1,0 +1,23 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+      css/region.css: {}
+      css/portfolio.css: {}
+      css/contact.css: {}
+      css/menu.css: {}
+      css/scroll.css: {}
+      css/paragraph.css: {}
+      css/count.css: {}
+      css/footer.css: {}
+      css/mediaquery.css: {}
+      https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css: {}
+        
+  js:
+    js/baker.js: {}  
+    https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js: {}
+  dependencies:
+    -  core/jquery  
+ 
+    

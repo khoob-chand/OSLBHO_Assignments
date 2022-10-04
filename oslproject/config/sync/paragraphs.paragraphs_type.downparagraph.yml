@@ -1,0 +1,10 @@
+uuid: 170729fb-7fde-42ce-9baf-d95fb621fbd5
+langcode: en
+status: true
+dependencies: {  }
+id: downparagraph
+label: downparagraph
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
