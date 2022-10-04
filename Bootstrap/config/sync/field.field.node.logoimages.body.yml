@@ -1,0 +1,23 @@
+uuid: 3388f779-26bd-4a8c-a13e-ee203b95e7b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.logoimages
+  module:
+    - text
+id: node.logoimages.body
+field_name: body
+entity_type: node
+bundle: logoimages
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

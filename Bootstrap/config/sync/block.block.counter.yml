@@ -1,0 +1,25 @@
+uuid: 0890fc5b-96ae-407a-8797-91206a6f9b23
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:countnumber:82335f4e-e617-4b4c-aa0f-0c7ddef87e47'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: counter
+theme: bootstrap
+region: footer_fifth
+weight: -22
+provider: null
+plugin: 'block_content:82335f4e-e617-4b4c-aa0f-0c7ddef87e47'
+settings:
+  id: 'block_content:82335f4e-e617-4b4c-aa0f-0c7ddef87e47'
+  label: counter
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

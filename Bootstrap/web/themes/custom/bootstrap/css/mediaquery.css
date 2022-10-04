@@ -1,0 +1,200 @@
+/* @media (min-width:991px ) and (max-width:2500px){
+    #page{
+        overflow-x: hidden;
+    }
+    .pricing .para{
+        margin-top:30%;
+    }
+    .news_5 .field__item{
+        display:none;
+    }
+    #superfish-primarymenu {
+        
+        font-size: 11px;
+        margin-left: 100px;
+    }
+    ul.sf-menu a, ul.sf-menu span.nolink {
+        display: block;
+        padding: 0em 1.5em;
+        position: relative;
+    }
+    #block-bootstrap-branding .site-branding__name{
+        top:-60px;
+    }
+    #block-bootstrap-branding a img{
+        width:64%;
+    }
+
+
+} */
+@media (min-width:360px ) and (max-width:767px){
+    /* nav{
+        display:none;
+    } */
+    /* #header{
+        display:none;
+    } */
+
+
+#header .region-header{
+    display: none;
+}
+    body{
+        overflow-x: hidden;
+        overflow-x: hidden;
+
+        /* overflow-y:hidden; */
+        
+    }
+    html {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+      }
+    .example::-webkit-scrollbar {
+        display: none;
+      }
+    .div_image_portfolio{
+        display:flex;
+        flex-direction: column;;
+            
+    }
+    .field--name-field-text .field__item div {
+        padding:11px;
+        /* width:90vw; */
+    }
+    .view-id-page_1 .view-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin-left:1px;
+    }
+    .view-portfolios .view-content{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .view-id-team .view-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        /* margin-left:1px; */
+
+    }
+    /* .view-listing .view-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+
+    } */
+    .view-listing .view-content{
+        display:flex;
+        flex-direction:column;
+    }
+    .subscription_field_body ul li{
+        font-size:17px;
+    }
+    .subscription:hover{
+        transform:scaleY(1);
+    }
+    .subscription{
+        margin-top:20px;
+        width: 57vw;
+    }
+    .subscription_field_body ul {
+        margin-top: 10px;
+        width: 53vw;
+        text-align: center;
+    }
+    element {
+        width: 69vw;
+        margin-left: -100px;
+      }
+      #disp .field--type-text-with-summary p{
+        width: 69vw;
+    margin-left: -100px;
+    text-align:left;
+    margin-top:20px;
+      }
+      .child_para {
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: -57px;
+      
+
+      }
+      .child_para .field__item{
+        padding:7px;
+        width:57vw;
+      }
+      /* .contact_2 .field--type-text-with-summary p {
+        text-align: center; */
+        /* margin-left: 150px;
+        width: 66vw;
+      } */
+      .contact_2 .field--type-text-with-summary p {
+        text-align: center;
+        margin-left: 0px;
+        width: 67vw;
+      }
+      .node__content{
+        display:block;
+      }
+      .field--name-field-para-3 .paragraph--view-mode--default {
+        margin-top: 0px;
+    }
+    .site-footer .layout-container{
+        margin-left:0px;
+        float:none;
+    }
+    .site-footer .layout-container .site-footer__top{
+
+        display:block;
+    }
+    #block-usefullinks{
+        margin-left:46px;
+        margin-top:30px;
+    }
+    .newsletter{
+        margin-left:119px;
+    }
+    .field--name-field-para-1 .paragraph--view-mode--default {
+        margin-top:0px;
+    }
+    
+        
+
+
+
+
+}
+@media (min-width:991px ) and (max-width:2500px){
+    html {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+      }
+      body{
+        overflow-x:hidden;
+      }
+
+}
+@media (min-width:767px ) and (max-width:991px){
+    html {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+      }
+      body{
+        overflow-x:hidden;
+      }
+
+}

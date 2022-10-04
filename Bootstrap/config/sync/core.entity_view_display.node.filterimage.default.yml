@@ -1,0 +1,34 @@
+uuid: e67dd46e-f951-45b2-80c9-fa8d42a55ed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.filterimage.field_filter_image
+    - image.style.thumbnail
+    - node.type.filterimage
+  module:
+    - image
+    - user
+id: node.filterimage.default
+targetEntityType: node
+bundle: filterimage
+mode: default
+content:
+  field_filter_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true

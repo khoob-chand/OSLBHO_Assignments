@@ -1,0 +1,24 @@
+uuid: b64c1bd3-be8d-4705-a8bd-29c7df6719da
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.contentregion
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__contentregion_block_1_4
+theme: bootstrap
+region: content
+weight: -30
+provider: null
+plugin: 'views_block:contentregion-block_1'
+settings:
+  id: 'views_block:contentregion-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

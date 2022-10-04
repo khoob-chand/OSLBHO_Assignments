@@ -1,0 +1,23 @@
+uuid: d6190aae-412e-4e96-9e80-93ad2bb440d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.servicepage
+  module:
+    - text
+id: node.servicepage.body
+field_name: body
+entity_type: node
+bundle: servicepage
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,25 @@
+uuid: 62b5a8c1-7e13-417b-ad74-c3e844a11d96
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:paragraph_2:e0153216-187b-45b2-945c-bfb7224660cb'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: droplink_3
+theme: bootstrap
+region: featured_bottom_first
+weight: -14
+provider: null
+plugin: 'block_content:e0153216-187b-45b2-945c-bfb7224660cb'
+settings:
+  id: 'block_content:e0153216-187b-45b2-945c-bfb7224660cb'
+  label: droplink_3
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

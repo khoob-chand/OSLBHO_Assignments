@@ -1,0 +1,54 @@
+uuid: 94069156-59a9-4fc3-801a-d00260e15e36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pricepara.field_body
+    - field.field.paragraph.pricepara.field_link
+    - field.field.paragraph.pricepara.field_para
+    - field.field.paragraph.pricepara.field_paranum
+    - paragraphs.paragraphs_type.pricepara
+  module:
+    - link
+    - text
+id: paragraph.pricepara.default
+targetEntityType: paragraph
+bundle: pricepara
+mode: default
+content:
+  field_body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_para:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_paranum:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

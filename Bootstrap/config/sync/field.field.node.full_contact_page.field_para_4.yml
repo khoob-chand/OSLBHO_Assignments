@@ -1,0 +1,32 @@
+uuid: a26366d3-b20d-48a8-811c-6f73c55e0dd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_para_4
+    - node.type.full_contact_page
+    - webform.webform.contactus
+  module:
+    - webform
+id: node.full_contact_page.field_para_4
+field_name: field_para_4
+entity_type: node
+bundle: full_contact_page
+label: para_4
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: d7f6ce99-0225-4182-b5bc-701407e835a2
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

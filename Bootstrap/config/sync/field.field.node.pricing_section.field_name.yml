@@ -1,0 +1,19 @@
+uuid: fc9f2cc1-0657-4deb-9a87-f5bb42a8be12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.pricing_section
+id: node.pricing_section.field_name
+field_name: field_name
+entity_type: node
+bundle: pricing_section
+label: name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

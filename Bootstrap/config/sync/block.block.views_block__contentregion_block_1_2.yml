@@ -1,0 +1,24 @@
+uuid: d0966466-7ff5-4968-b0c5-722f3c71a89f
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.contentregion
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__contentregion_block_1_2
+theme: bootstrap
+region: content
+weight: -21
+provider: null
+plugin: 'views_block:contentregion-block_1'
+settings:
+  id: 'views_block:contentregion-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 2de4992e-ca90-4e53-9e18-0d86064f41aa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:price:07cd73ac-b51a-4fd8-a28b-0c0c17e48018'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: listprice
+theme: bootstrap
+region: featured_bottom_first
+weight: -22
+provider: null
+plugin: 'block_content:07cd73ac-b51a-4fd8-a28b-0c0c17e48018'
+settings:
+  id: 'block_content:07cd73ac-b51a-4fd8-a28b-0c0c17e48018'
+  label: listprice
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

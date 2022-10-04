@@ -1,0 +1,61 @@
+uuid: b9ce35be-d88f-43e8-8772-9fe84846fc29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.full_contact_page.field_para_1
+    - field.field.node.full_contact_page.field_para_2
+    - field.field.node.full_contact_page.field_para_3
+    - field.field.node.full_contact_page.field_para_4
+    - node.type.full_contact_page
+  module:
+    - entity_reference_revisions
+    - user
+    - webform
+id: node.full_contact_page.default
+targetEntityType: node
+bundle: full_contact_page
+mode: default
+content:
+  field_para_1:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_para_2:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_para_3:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_para_4:
+    type: webform_entity_reference_entity_view
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true

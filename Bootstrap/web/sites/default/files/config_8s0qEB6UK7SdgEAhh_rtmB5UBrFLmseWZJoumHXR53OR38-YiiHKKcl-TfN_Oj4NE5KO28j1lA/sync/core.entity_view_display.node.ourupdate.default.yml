@@ -1,0 +1,69 @@
+uuid: 2c531a2d-40b8-4ea9-963f-af728c0eae59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ourupdate.body
+    - field.field.node.ourupdate.field_description
+    - field.field.node.ourupdate.field_image
+    - field.field.node.ourupdate.field_more_information
+    - node.type.ourupdate
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.ourupdate.default
+targetEntityType: node
+bundle: ourupdate
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_more_information:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  addtoany: true

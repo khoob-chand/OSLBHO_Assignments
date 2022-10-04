@@ -1,0 +1,23 @@
+uuid: 134a4091-7142-418e-8741-b2f979604ffa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.testoimage
+  module:
+    - text
+id: node.testoimage.body
+field_name: body
+entity_type: node
+bundle: testoimage
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

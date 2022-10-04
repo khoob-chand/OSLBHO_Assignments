@@ -1,0 +1,25 @@
+uuid: a0ff190d-1c3a-493b-aa17-7dff8e5a3860
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:countnumber:4337cbee-311f-49ef-bef0-705250df6209'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: count_num
+theme: bootstrap
+region: featured_bottom_first
+weight: -32
+provider: null
+plugin: 'block_content:4337cbee-311f-49ef-bef0-705250df6209'
+settings:
+  id: 'block_content:4337cbee-311f-49ef-bef0-705250df6209'
+  label: count_num
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

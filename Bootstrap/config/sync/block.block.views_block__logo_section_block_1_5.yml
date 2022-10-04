@@ -1,0 +1,24 @@
+uuid: 61145ce4-61d1-4d80-b521-8241171b9581
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.logo_section
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__logo_section_block_1_5
+theme: bootstrap
+region: featured_bottom_first
+weight: -18
+provider: null
+plugin: 'views_block:logo_section-block_1'
+settings:
+  id: 'views_block:logo_section-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

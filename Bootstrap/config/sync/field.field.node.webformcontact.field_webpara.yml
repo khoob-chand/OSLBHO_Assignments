@@ -1,0 +1,43 @@
+uuid: f6625e58-be6f-4f71-a20b-34edc96c9be5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_webpara
+    - node.type.webformcontact
+    - paragraphs.paragraphs_type.contact
+  module:
+    - entity_reference_revisions
+id: node.webformcontact.field_webpara
+field_name: field_webpara
+entity_type: node
+bundle: webformcontact
+label: webpara
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      contact: contact
+    negate: 0
+    target_bundles_drag_drop:
+      contact:
+        weight: 6
+        enabled: true
+      description:
+        weight: 7
+        enabled: false
+      downparagraph:
+        weight: 8
+        enabled: false
+      faq:
+        weight: 9
+        enabled: false
+      pricepara:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

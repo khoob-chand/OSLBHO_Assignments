@@ -1,0 +1,25 @@
+uuid: 317d9348-1104-4988-b922-c2c330764c74
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:pricing:ae22190b-8dcb-4abb-8e4c-9f0100545841'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: price_2
+theme: bootstrap
+region: featured_bottom_first
+weight: -6
+provider: null
+plugin: 'block_content:ae22190b-8dcb-4abb-8e4c-9f0100545841'
+settings:
+  id: 'block_content:ae22190b-8dcb-4abb-8e4c-9f0100545841'
+  label: price_2
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

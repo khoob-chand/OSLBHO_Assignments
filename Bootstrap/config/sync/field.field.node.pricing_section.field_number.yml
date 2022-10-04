@@ -1,0 +1,23 @@
+uuid: 9150fd2b-31ab-4660-8679-4eabc4d29c46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number
+    - node.type.pricing_section
+id: node.pricing_section.field_number
+field_name: field_number
+entity_type: node
+bundle: pricing_section
+label: number
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

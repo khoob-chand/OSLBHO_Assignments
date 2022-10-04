@@ -1,0 +1,25 @@
+uuid: 90fec687-ca12-4f28-a178-ad8852ae000e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:newsletter:73337d5e-9e16-4616-9205-8ad7e26dcb50'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: joinnewsletter
+theme: bootstrap
+region: footer_third
+weight: -29
+provider: null
+plugin: 'block_content:73337d5e-9e16-4616-9205-8ad7e26dcb50'
+settings:
+  id: 'block_content:73337d5e-9e16-4616-9205-8ad7e26dcb50'
+  label: 'Join News Letter'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

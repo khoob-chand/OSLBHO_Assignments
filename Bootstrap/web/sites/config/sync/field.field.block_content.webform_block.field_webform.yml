@@ -1,0 +1,25 @@
+uuid: 8111809c-5315-45c0-8819-e4b86442aecb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.webform_block
+    - field.storage.block_content.field_webform
+  module:
+    - webform
+id: block_content.webform_block.field_webform
+field_name: field_webform
+entity_type: block_content
+bundle: webform_block
+label: webform
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

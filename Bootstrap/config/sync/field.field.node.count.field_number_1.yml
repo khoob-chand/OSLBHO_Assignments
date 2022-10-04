@@ -1,0 +1,23 @@
+uuid: deafd857-45be-419d-84a2-08bc58b8ffa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_1
+    - node.type.count
+id: node.count.field_number_1
+field_name: field_number_1
+entity_type: node
+bundle: count
+label: number
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

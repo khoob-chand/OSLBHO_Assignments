@@ -1,0 +1,18 @@
+uuid: a0a5aca9-3c4b-4866-95ae-bc62a9f59d22
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: webformcontact
+type: webformcontact
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

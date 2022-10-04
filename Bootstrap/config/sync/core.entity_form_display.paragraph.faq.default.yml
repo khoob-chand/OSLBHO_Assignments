@@ -1,0 +1,14 @@
+uuid: 9b757648-ac36-4b88-8c1f-b3eff86c2374
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.faq
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true

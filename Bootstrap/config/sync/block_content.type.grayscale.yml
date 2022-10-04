@@ -1,0 +1,8 @@
+uuid: 1f9de078-7732-4efd-a330-8a506bc6d6e6
+langcode: en
+status: true
+dependencies: {  }
+id: grayscale
+label: grayscale
+revision: 0
+description: ''

@@ -1,0 +1,22 @@
+uuid: a562b98d-7948-40b5-9cf8-591c6146e415
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.endfooter
+    - field.field.block_content.endfooter.body
+  module:
+    - text
+id: block_content.endfooter.default
+targetEntityType: block_content
+bundle: endfooter
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

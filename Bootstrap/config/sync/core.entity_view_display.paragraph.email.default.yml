@@ -1,0 +1,40 @@
+uuid: 7a39e1e1-dcb2-43e2-b53f-2c1dd390d436
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.email.field_email_para
+    - field.field.paragraph.email.field_email_para_1
+    - field.field.paragraph.email.field_emailpara
+    - paragraphs.paragraphs_type.email
+  module:
+    - fontawesome
+id: paragraph.email.default
+targetEntityType: paragraph
+bundle: email
+mode: default
+content:
+  field_email_para:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_email_para_1:
+    type: email_mailto
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_emailpara:
+    type: fontawesome_icon_formatter
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

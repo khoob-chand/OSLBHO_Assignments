@@ -1,0 +1,102 @@
+.node__content {
+    display: flex;
+    justify-content: center;
+}
+ header .node__meta span{
+    display: none;
+
+}
+.field--name-field-para-3 .paragraph--view-mode--default{
+    margin-top:200px;
+}
+.field--name-field-para-1 .paragraph--view-mode--default{
+    margin-top:200px;
+}
+.field--name-field-para-1 .paragraph--view-mode--default .fontawesome-icon{
+    font-size:25px;
+    color:orange;
+    
+} 
+.field--name-field-para-2 .paragraph--view-mode--default .fontawesome-icon{
+    font-size:25px;
+    color:orange;
+    
+}  
+.field--name-field-para-3 .paragraph--view-mode--default .fontawesome-icon{
+    font-size:25px;
+    color:orange;
+    
+}   
+.paragraph--view-mode--default{
+    line-height: 30px;
+    text-align:center;
+}
+
+.paragraph--view-mode--default .field--name-field-email-para{
+    font-weight:bold;
+    font-size:20px;
+}
+.paragraph--view-mode--default .field--name-field-address{
+    font-weight:bold;
+    font-size:20px;
+}
+.paragraph--view-mode--default .field--name-field-call-us-plain{
+    font-weight:bold;
+    font-size:20px;
+}
+.paragraph--view-mode--default .field--name-field-para-1{
+    text-align: right;;
+}
+.views-element-container {
+    /* width: 100vw; */
+    background-color: #f7f8fa;
+
+}
+.featured-bottom input:not(.form-submit){
+    width:250px;
+    line-height:20px;
+    padding:10px;
+}
+.js-form-type-email{ 
+    display:flex;
+    /* margin-top:-5px; */
+    margin-left:10px;
+    /* margin-left:-2px; */
+    
+
+
+}
+#edit-submit{
+    width:100%;
+}
+#edit-actions--2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#edit-actions-submit{
+    background-color: gold;
+    font-weight:bold;
+    color:black;
+    padding:12px 50px;
+    
+}
+form label {
+    display:none;
+}
+#edit-name{
+    float:left;
+}
+.node__title{
+    display: none;
+}
+.field--name-field-email-para-1 a{
+   border:none;
+    color:black;
+
+}
+.contact_1 .field__item{
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+
+.view-id-portfolios  .view-header{
+    text-align: center;
+    margin: 0px auto;
+    width:50vw;
+    color:#aab3c7;
+}
+/* links override */
+.bef-links ul {
+
+display:flex;
+
+}
+.bef-links ul li {
+    padding:8px 20px;
+    font-size:20px;
+    /* color:black; */
+    border:1px solid rgb(219, 218, 218);
+    background: #fafafc;
+    border-radius:10px;
+    margin-right:5px;
+    text-align: center;
+    transition: 1s;
+    
+}
+.bef-links ul li:nth-child(1){
+    display: none;
+}
+.bef-links ul li a{
+    color:black;
+    border-bottom:none ;
+}
+.bef-links ul li:hover{
+    background-color: yellow;;
+    transform: scaleY(1.1);
+}
+form .form--inline {
+    display:flex;
+    justify-content: center;
+
+}

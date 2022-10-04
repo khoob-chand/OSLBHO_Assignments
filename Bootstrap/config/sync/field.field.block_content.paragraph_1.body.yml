@@ -1,0 +1,23 @@
+uuid: dfca0581-ea53-48a8-b3e6-3aa55f60f40a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.paragraph_1
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.paragraph_1.body
+field_name: body
+entity_type: block_content
+bundle: paragraph_1
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

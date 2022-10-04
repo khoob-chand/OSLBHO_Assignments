@@ -1,0 +1,57 @@
+uuid: b470d4af-e0b5-4edd-95e5-9bb12f4d964e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_us_page.body
+    - field.field.node.about_us_page.field_image_aboutus
+    - field.field.node.about_us_page.field_link_
+    - image.style.scale_and_crop
+    - node.type.about_us_page
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.about_us_page.default
+targetEntityType: node
+bundle: about_us_page
+mode: default
+content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_aboutus:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: scale_and_crop
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  links: true

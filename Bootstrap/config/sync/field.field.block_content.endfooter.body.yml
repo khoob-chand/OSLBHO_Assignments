@@ -1,0 +1,23 @@
+uuid: 92aeb317-5064-443a-9664-c83c7b3233f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.endfooter
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.endfooter.body
+field_name: body
+entity_type: block_content
+bundle: endfooter
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

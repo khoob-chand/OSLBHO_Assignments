@@ -1,0 +1,12 @@
+uuid: c3febcc6-5156-4069-a969-8c190d4d7aca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.grayscale
+id: block_content.grayscale.default
+targetEntityType: block_content
+bundle: grayscale
+mode: default
+content: {  }
+hidden: {  }

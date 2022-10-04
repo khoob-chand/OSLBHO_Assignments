@@ -1,0 +1,23 @@
+uuid: 38afa857-205c-429d-aa7e-5e9a4d5a3e1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bakerfooter
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.bakerfooter.body
+field_name: body
+entity_type: block_content
+bundle: bakerfooter
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

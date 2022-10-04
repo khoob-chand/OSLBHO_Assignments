@@ -1,0 +1,52 @@
+#header nav .content ul li ul {
+    display:none;
+    color:red;
+     /* display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+     color: black; 
+     background-color: #bfcae2;
+    margin-top: 10px;  */
+
+}
+
+
+
+ #header nav .content ul li:hover  #header nav .content ul li ul{
+   
+display:block;
+ 
+    border: 1px solid white;
+
+    background-color: #bfcae2;
+    margin-top: 10px;
+
+} 
+#superfish-primarymenu{
+    margin-left:22vw;
+    font-size:16px;
+}
+#block-bootstrap-branding .site-branding__name{
+    position:relative;
+    top:-60px;
+    left:10vw;
+}
+#superfish-primarymenu li:nth-child(7) ul{
+    background-color:white ;
+    /* color:black; */
+}
+#superfish-primarymenu li:nth-child(7) ul li a{
+    /* background-color:white ; */
+    color:black;
+}
+#superfish-primarymenu li:nth-child(1) a{
+    color:goldenrod;
+} 
+#superfish-primarymenu li:hover a{
+    color:goldenrod;
+} 
+#superfish-primarymenu li:nth-child(7) ul li a:hover{
+    color:goldenrod;
+}
+
+

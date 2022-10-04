@@ -1,0 +1,24 @@
+uuid: ede66dda-ab7a-4567-8228-2ee81041a5a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.testomonialimage
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__testomonialimage_block_1
+theme: bootstrap
+region: featured_bottom_first
+weight: -27
+provider: null
+plugin: 'views_block:testomonialimage-block_1'
+settings:
+  id: 'views_block:testomonialimage-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
