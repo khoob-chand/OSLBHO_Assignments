@@ -1,0 +1,18 @@
+{{ attach_library('service/service-style') }}
+<div class="main">
+<h1 class="heading1">{{ title }}</h1>
+<p class="heading2">{{ desc }} </p>
+
+
+<div style="display:flex; flex-wrap:wrap" class="card">
+{% for x in data %}
+<div style="width:31%" class="showstyle">
+<img  class="image" src="{{ file_url(x.pimage) }}">
+<h4 class="title">{{ x.ptitle }}</h4>
+<p class="desc">{{ x.pdesc }} </p>
+<p class="desc"><a href="{{ x.url }}">{{x.plink }}</a></p>
+</div>
+{% endfor %}
+
+</div>
+</div>

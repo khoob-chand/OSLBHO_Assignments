@@ -1,0 +1,4 @@
+service-style:
+  css:
+    theme:
+      css/main.css: {}

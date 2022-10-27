@@ -1,0 +1,17 @@
+
+# Serviceentity menu items definition
+entity.serviceentity.collection:
+  title: 'Serviceentity list'
+  route_name: entity.serviceentity.collection
+  description: 'List Serviceentity entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Serviceentity type menu items definition
+entity.serviceentity_type.collection:
+  title: 'Serviceentity type'
+  route_name: entity.serviceentity_type.collection
+  description: 'List Serviceentity type (bundles)'
+  parent: system.admin_structure
+  weight: 99

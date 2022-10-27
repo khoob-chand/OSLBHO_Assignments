@@ -1,0 +1,31 @@
+uuid: 04ec7f4c-d42f-4e19-94d7-1d86e7b7ff56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.serviceentity.field_card
+    - paragraphs.paragraphs_type.card
+    - service.serviceentity_type.service
+  module:
+    - entity_reference_revisions
+id: serviceentity.service.field_card
+field_name: field_card
+entity_type: serviceentity
+bundle: service
+label: card
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card: card
+    negate: 0
+    target_bundles_drag_drop:
+      card:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

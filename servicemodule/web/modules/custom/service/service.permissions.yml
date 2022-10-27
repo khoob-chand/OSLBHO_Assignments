@@ -1,0 +1,33 @@
+add serviceentity entities:
+  title: 'Create new Serviceentity entities'
+
+administer serviceentity entities:
+  title: 'Administer Serviceentity entities'
+  description: 'Allow to access the administration form to configure Serviceentity entities.'
+  restrict access: true
+
+delete serviceentity entities:
+  title: 'Delete Serviceentity entities'
+
+edit serviceentity entities:
+  title: 'Edit Serviceentity entities'
+
+view published serviceentity entities:
+  title: 'View published Serviceentity entities'
+
+view unpublished serviceentity entities:
+  title: 'View unpublished Serviceentity entities'
+
+view all serviceentity revisions:
+  title: 'View all Serviceentity revisions'
+
+revert all serviceentity revisions:
+  title: 'Revert all Serviceentity revisions'
+  description: 'Role requires permission <em>view Serviceentity revisions</em> and <em>edit rights</em> for serviceentity entities in question or <em>administer serviceentity entities</em>.'
+
+delete all serviceentity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Serviceentity revisions</em> and <em>delete rights</em> for serviceentity entities in question or <em>administer serviceentity entities</em>.'
+
+permission_callbacks:
+  - \Drupal\service\serviceentityPermissions::generatePermissions

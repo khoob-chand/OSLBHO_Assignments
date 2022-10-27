@@ -1,0 +1,13 @@
+{
+    "name": "service",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/service",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/service",
+        "source": "http://cgit.drupalcode.org/service",
+    },
+}

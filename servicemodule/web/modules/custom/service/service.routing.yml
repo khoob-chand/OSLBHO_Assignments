@@ -1,0 +1,7 @@
+service.kuchbhi:
+  path: '/custom/{id}'
+  defaults:
+    _controller:  'Drupal\service\Controller\FormController::content'
+    _title: 'Just a simple form'
+  requirements:
+    _permission: 'access content'

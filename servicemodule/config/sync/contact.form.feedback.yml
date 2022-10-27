@@ -1,0 +1,14 @@
+uuid: db9b8752-2fe6-42ee-9675-54a20148987c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - khoobchand.jhariya@opensenselabs.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

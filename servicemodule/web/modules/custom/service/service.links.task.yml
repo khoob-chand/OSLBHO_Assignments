@@ -1,0 +1,27 @@
+# Serviceentity routing definition
+entity.serviceentity_type.edit_form:
+  route_name: entity.serviceentity_type.edit_form
+  base_route: entity.serviceentity_type.edit_form
+  title: 'Edit'
+  weight: 0
+
+entity.serviceentity.canonical:
+  route_name: entity.serviceentity.canonical
+  base_route: entity.serviceentity.canonical
+  title: 'View'
+
+entity.serviceentity.edit_form:
+  route_name: entity.serviceentity.edit_form
+  base_route: entity.serviceentity.canonical
+  title: 'Edit'
+
+entity.serviceentity.version_history:
+  route_name: entity.serviceentity.version_history
+  base_route: entity.serviceentity.canonical
+  title: 'Revisions'
+
+entity.serviceentity.delete_form:
+  route_name:  entity.serviceentity.delete_form
+  base_route:  entity.serviceentity.canonical
+  title: Delete
+  weight: 10

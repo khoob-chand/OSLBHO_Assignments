@@ -1,0 +1,6 @@
+uuid: f12cf7ef-ced7-4910-b27e-bb60cce4374b
+langcode: en
+status: true
+dependencies: {  }
+id: service
+label: service

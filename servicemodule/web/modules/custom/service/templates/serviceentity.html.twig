@@ -1,0 +1,22 @@
+{#
+/**
+ * @file serviceentity.html.twig
+ * Default theme implementation to present Serviceentity data.
+ *
+ * This template is used when viewing Serviceentity pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_serviceentity()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('serviceentity') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

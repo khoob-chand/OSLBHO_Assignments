@@ -1,0 +1,10 @@
+entity.serviceentity.add_form:
+  route_name: entity.serviceentity.add_page
+  title: 'Add Serviceentity'
+  appears_on:
+    - entity.serviceentity.collection
+entity.serviceentity_type.add_form:
+  route_name: entity.serviceentity_type.add_form
+  title: 'Add Serviceentity type'
+  appears_on:
+    - entity.serviceentity_type.collection
