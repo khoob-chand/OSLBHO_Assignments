@@ -1,0 +1,116 @@
+<?php
+/**
+ * @file
+ */
+
+function customtable_schema() {
+  $schema['main'] = [
+    'description' => 'Track where a file is used.',
+    'fields' => [
+      'id' => [
+        'description' => 'File ID.',
+        'type' => 'serial',
+        'size'=>'small',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        
+      ],
+      'title' => [
+        'description' => 'The name of the module that is using the file.',
+        'type' => 'varchar',
+        'length' =>255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'description' => [
+        'description' => 'The name of the module that is using the file.',
+        'type' => 'varchar',
+        'length' =>255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'fid' => array(
+        'description' => 'The primary identifier for the form',
+        'type' => 'int',
+        'not null' => TRUE,
+        'unsigned' => FALSE,
+        'default' => 0,
+    ),
+      
+     
+      
+    ],
+    'primary key' => [
+      'id',
+      
+    ],
+
+
+   
+     
+     
+  
+  ];
+  $schema['card'] = [
+    'description' => 'Track where a file is used.',
+    'fields' => [
+      // 'nid' => [
+      //   'description' => 'File ID.',
+      //   'type' => 'serial',
+      //   'unsigned' => TRUE,
+      //   'not null' => TRUE,
+      // ],
+      'image' => [
+        'description' => 'The name of the module that is using the file.',
+        'type' => 'varchar',
+        'length' =>255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'title' => [
+        'description' => 'The name of the module that is using the file.',
+        'type' => 'varchar',
+        'length' =>255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'description' => [
+        'description' => 'The name of the module that is using the file.',
+        'type' => 'varchar',
+        'length' =>255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'link' => [
+        'description' => 'The name of the module that is using the file.',
+        'type' => 'varchar',
+        'length' =>255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'fid' => array(
+        'description' => 'The primary identifier for the form',
+        'type' => 'int',
+        'not null' => TRUE,
+        'unsigned' => FALSE,
+        'default' => 0,
+    ),
+      
+     
+      
+    ],
+    // 'foreign keys' => [
+    //   'fk_name_node' => [
+    //     'table' => 'card',
+    //     'columns' => ['nid' => 'nid'],
+    //   ],
+    // ],
+
+
+
+  ];
+  return $schema;
+}
+
+
+    

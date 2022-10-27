@@ -1,0 +1,9 @@
+<?php 
+function customtable_theme(){
+  $theme=[];
+  $theme['mylist']=[
+    'variables'=>['cards'=>'','ourservices'=>''],
+  ];
+  return $theme;
+}
+

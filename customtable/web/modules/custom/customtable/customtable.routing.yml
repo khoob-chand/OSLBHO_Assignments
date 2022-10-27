@@ -1,0 +1,17 @@
+customtable.kuchbhi:
+  path: '/custom/{id}'
+  defaults:
+    # _form: '\Drupal\customtable\Form\FirstForm'
+    _controller: '\Drupal\customtable\Controller\FirstCustomController::content'
+    _title: 'created form'
+  requirements: 
+    _permission: 'access content'  
+
+customtable.kuchbhi2:
+  path: '/myform'
+  defaults:
+    _form: '\Drupal\customtable\Form\FirstForm'
+    # _controller: '\Drupal\customtable\Controller\FirstController::content'
+    _title: 'created form'
+  requirements: 
+    _permission: 'access content'      

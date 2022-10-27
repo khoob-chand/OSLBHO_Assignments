@@ -1,0 +1,5 @@
+name: custom table
+package: custom
+core_version_requirement: ^8 || ^9
+type: module
+description: my awesome module
