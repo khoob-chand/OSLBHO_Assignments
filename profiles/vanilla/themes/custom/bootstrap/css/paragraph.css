@@ -1,0 +1,52 @@
+.parent_para{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    transition:  2s;
+ 
+}
+.parent_para .field--type-text-with-summary p{
+    text-align:left;
+}
+.siblings{
+    width:28vw;
+    text-align:left;
+    
+
+}
+.child_para{
+    text-align: center;
+    /* width:26vw; */
+    margin-bottom:15px;
+    /* padding:20px 10px; */
+   
+    transition: 2s;;
+    font-weight:bold;
+    font-size:20px;
+    width: 50vw;
+    background-color:#fff;
+    margin: 0px auto;
+}
+.child_para .field__item{
+    padding:30px;
+
+}
+
+.siblings{
+    display:none;
+}
+.sib{
+    display:block;
+    transform: scale(1.2);
+}
+
+#displaying:hover{
+  
+    color:goldenrod;
+
+}
+.para{
+    margin-top:100px;
+}

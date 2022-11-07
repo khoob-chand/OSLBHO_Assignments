@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.grayscale
+id: block_content.grayscale.default
+targetEntityType: block_content
+bundle: grayscale
+mode: default
+content: {  }
+hidden: {  }

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.webformcontact.field_webpara
+    - node.type.webformcontact
+  module:
+    - entity_reference_revisions
+    - user
+id: node.webformcontact.default
+targetEntityType: node
+bundle: webformcontact
+mode: default
+content:
+  field_webpara:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true

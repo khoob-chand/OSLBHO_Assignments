@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bakerfooter:fbca7f26-eccb-4b0a-bfbd-33f90e9f41fb'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: baker
+theme: bootstrap
+region: footer_first
+weight: -30
+provider: null
+plugin: 'block_content:fbca7f26-eccb-4b0a-bfbd-33f90e9f41fb'
+settings:
+  id: 'block_content:fbca7f26-eccb-4b0a-bfbd-33f90e9f41fb'
+  label: baker
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

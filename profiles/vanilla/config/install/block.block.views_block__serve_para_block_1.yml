@@ -1,0 +1,23 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.serve_para
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__serve_para_block_1
+theme: bootstrap
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:serve_para-block_1'
+settings:
+  id: 'views_block:serve_para-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

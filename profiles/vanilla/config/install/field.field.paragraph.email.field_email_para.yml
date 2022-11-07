@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_email_para
+    - paragraphs.paragraphs_type.email
+id: paragraph.email.field_email_para
+field_name: field_email_para
+entity_type: paragraph
+bundle: email
+label: email_para
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

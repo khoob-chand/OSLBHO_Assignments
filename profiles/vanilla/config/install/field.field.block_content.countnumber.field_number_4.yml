@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.countnumber
+    - field.storage.block_content.field_number_4
+id: block_content.countnumber.field_number_4
+field_name: field_number_4
+entity_type: block_content
+bundle: countnumber
+label: number_4
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

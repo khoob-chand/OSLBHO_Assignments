@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact:4cf34b0a-4cae-4612-ac36-bba7184a38c4'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: contact
+theme: bootstrap
+region: featured_bottom_first
+weight: -20
+provider: null
+plugin: 'block_content:4cf34b0a-4cae-4612-ac36-bba7184a38c4'
+settings:
+  id: 'block_content:4cf34b0a-4cae-4612-ac36-bba7184a38c4'
+  label: contact
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

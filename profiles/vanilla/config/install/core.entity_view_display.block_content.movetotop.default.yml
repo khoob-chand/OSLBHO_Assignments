@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.movetotop
+    - field.field.block_content.movetotop.field_arrow
+  module:
+    - fontawesome
+id: block_content.movetotop.default
+targetEntityType: block_content
+bundle: movetotop
+mode: default
+content:
+  field_arrow:
+    type: fontawesome_icon_formatter
+    label: above
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

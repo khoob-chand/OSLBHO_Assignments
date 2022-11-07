@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing
+    - field.field.block_content.pricing.field_plaintext
+    - field.field.block_content.pricing.field_text
+id: block_content.pricing.default
+targetEntityType: block_content
+bundle: pricing
+mode: default
+content:
+  field_plaintext:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

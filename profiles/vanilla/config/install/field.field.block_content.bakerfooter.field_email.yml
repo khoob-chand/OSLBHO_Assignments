@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bakerfooter
+    - field.storage.block_content.field_email
+id: block_content.bakerfooter.field_email
+field_name: field_email
+entity_type: block_content
+bundle: bakerfooter
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

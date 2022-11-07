@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - filter
+    - media
+    - paragraphs_type_permissions
+    - search
+    - system
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create paragraph content call_us'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'
+  - 'view paragraph content downparagraph'

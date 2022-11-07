@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:price:77c5858b-db2c-4110-92bd-946abe857353'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: price
+theme: bootstrap
+region: featured_bottom_first
+weight: -24
+provider: null
+plugin: 'block_content:77c5858b-db2c-4110-92bd-946abe857353'
+settings:
+  id: 'block_content:77c5858b-db2c-4110-92bd-946abe857353'
+  label: Price
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

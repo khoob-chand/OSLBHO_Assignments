@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_call_us_number
+    - paragraphs.paragraphs_type.call_us
+id: paragraph.call_us.field_call_us_number
+field_name: field_call_us_number
+entity_type: paragraph
+bundle: call_us
+label: call_us_number
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: '+91'
+  suffix: ''
+field_type: integer

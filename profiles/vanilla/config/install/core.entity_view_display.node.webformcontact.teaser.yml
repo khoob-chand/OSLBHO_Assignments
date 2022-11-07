@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webformcontact.field_webpara
+    - node.type.webformcontact
+  module:
+    - user
+id: node.webformcontact.teaser
+targetEntityType: node
+bundle: webformcontact
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_webpara: true

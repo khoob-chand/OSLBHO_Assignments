@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: footer1
+label: footer1
+revision: 0
+description: ''

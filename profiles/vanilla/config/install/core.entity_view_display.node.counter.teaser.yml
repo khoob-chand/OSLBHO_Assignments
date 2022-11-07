@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.counter
+  module:
+    - user
+id: node.counter.teaser
+targetEntityType: node
+bundle: counter
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true

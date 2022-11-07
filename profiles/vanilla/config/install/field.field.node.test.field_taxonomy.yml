@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxonomy
+    - node.type.test
+id: node.test.field_taxonomy
+field_name: field_taxonomy
+entity_type: node
+bundle: test
+label: taxonomy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

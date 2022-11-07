@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.paragraph_3
+    - field.field.block_content.paragraph_3.body
+    - field.field.block_content.paragraph_3.field_paragraph_3
+  module:
+    - text
+id: block_content.paragraph_3.default
+targetEntityType: block_content
+bundle: paragraph_3
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_paragraph_3:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

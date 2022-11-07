@@ -1,0 +1,106 @@
+name: vanilla
+type: profile
+description: 'Description of your profile.'
+core_version_requirement: '^8.8 || ^9'
+
+
+# Modules to install to support the profile.
+install:
+  - addtoany
+  - admin_toolbar
+  - admin_toolbar_links_access_filter
+  - admin_toolbar_search
+  - admin_toolbar_tools
+  - automated_cron
+  - better_exposed_filters
+  - big_pipe
+  - blazy
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - comment
+  - config
+  - config_merge
+  - contact
+  - contextual
+  - datetime
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - entity_reference_revisions
+  - field
+  - field_ui
+  - file
+  - filter
+  - flexslider
+  - flexslider_example
+  - flexslider_fields
+  - flexslider_views
+  - fontawesome
+  - fontawesome_iconpicker_widget
+  - help
+  - history
+  - image
+  - jquery_ui_datepicker
+  - jquery_ui_slider
+  - jquery_ui_touch_punch
+  - link
+  - media
+  - menu_link_content
+  - menu_ui
+  - mysql
+  - node
+  - options
+  - page_cache
+  - paragraphs_type_permissions
+  - path
+  - path_alias
+  - rdf
+  - scrollup
+  - search
+  - shortcut
+  - slick
+  - slick_carousel_slider
+  - slick_ui
+  - slick_views
+  - superfish
+  - system
+  - taxonomy
+  - text
+  - token
+  - toolbar
+  - tour
+  - update
+  - user
+  - views_ui
+  - webform
+  - webform_node
+  - webform_options_limit
+  - webform_scheduled_email
+  - webform_share
+  - webform_ui
+  - pathauto
+  - views
+  - paragraphs
+
+# Required modules
+# Note that any dependencies of the modules listed here will be installed automatically.
+dependencies:
+  - node
+  - block
+  - views
+  
+
+
+# List any themes that should be installed as part of the profile installation.
+# Note that this will not set any theme as the default theme.
+themes:
+  - olivero
+  - claro
+  - bartik
+  - bootstrap
+  - seven
+  - bootstrap
+
+

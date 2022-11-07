@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.price
+    - field.storage.block_content.field_text_1
+id: block_content.price.field_text_1
+field_name: field_text_1
+entity_type: block_content
+bundle: price
+label: text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
