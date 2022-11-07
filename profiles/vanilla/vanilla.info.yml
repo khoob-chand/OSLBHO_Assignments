@@ -2,6 +2,8 @@ name: vanilla
 type: profile
 description: 'Description of your profile.'
 core_version_requirement: '^8.8 || ^9'
+distribution:
+  name: Distribution Name
 
 
 # Modules to install to support the profile.

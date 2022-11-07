@@ -1,0 +1,74 @@
+{
+  "name": "drupal/recommended-project",
+  "description": "Project template for Drupal 9 projects with a relocated document root",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/drupal",
+  "support": {
+      "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+      "chat": "https://www.drupal.org/node/314178"
+  },
+  "repositories": [
+      {
+          "type": "composer",
+          "url": "https://packages.drupal.org/8"
+      }
+  ],
+  "require": {
+      "composer/installers": "^1.9",
+      "drupal/addtoany": "^1.16",
+      "drupal/admin_toolbar": "^3.1",
+      "drupal/better_exposed_filters": "^6.0",
+      "drupal/bootstrap_sass": "^5.0",
+      "drupal/config_merge": "^1.0@RC",
+      "drupal/core-composer-scaffold": "^9.4",
+      "drupal/core-project-message": "^9.4",
+      "drupal/core-recommended": "^9.4",
+      "drupal/entity_reference_revisions": "^1.10",
+      "drupal/flexslider": "^2.0",
+      "drupal/fontawesome": "^2.23",
+      "drupal/paragraphs": "^1.2",
+      "drupal/pathauto": "^1.11",
+      "drupal/scrollup": "^3.0",
+      "drupal/slick_carousel_slider": "^1.0",
+      "drupal/slick_views": "^2.6",
+      "drupal/superfish": "^1.4",
+      "drupal/webform": "^6.1"
+      },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+      "drupal/core-dev": "^9.1"
+  },
+  "extra": {
+      "composer-exit-on-patch-failure": true,
+      "patchLevel": {
+          "drupal/core": "-p2"
+      },
+      "drupal-scaffold": {
+          "locations": {
+              "web-root": "web/"
+          }
+      },
+      "installer-paths": {
+          "web/core": ["type:drupal-core"],
+          "web/libraries/{$name}": [
+              "type:drupal-library"
+          ],
+          "web/modules/contrib/{$name}": [
+              "type:drupal-module"
+          ],
+          "web/profiles/contrib/{$name}": [
+              "type:drupal-profile"
+          ],
+          "web/themes/contrib/{$name}": [
+              "type:drupal-theme"
+          ],
+          "drush/Commands/contrib/{$name}": [
+              "type:drupal-drush"
+          ]
+      }
+  }
+
+     
+}
