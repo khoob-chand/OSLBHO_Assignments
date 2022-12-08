@@ -1,0 +1,17 @@
+<div {{ bem('container') }}>
+	<div {{ bem('row','','',['footer-color']) }}>
+		<div {{ bem('col-4') }}>
+			{% include "@atoms/images/image/responsive-image.twig" with {
+              image_src: footer_image_src,
+             }%}
+   </div>
+   <div {{ bem('col-8','','',['footer-text']) }}>
+   	{% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 6, 
+        heading: footer_text,
+    } %}
+		
+   </div>
+
+	</div>
+</div>

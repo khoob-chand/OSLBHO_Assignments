@@ -1,0 +1,69 @@
+.flexbox-wrap-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // margin-top:10%;
+}
+.flexbox-wrap-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top:5%;
+}
+.flexbox-wrap--card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.flexbox-wrap--card{
+  .card-wrapper {
+ 
+    .h4:nth-child(2){
+      .h4__link{
+        color: black;
+      font-family: 'Cormorant', serif;
+      font-size: 3.43rem;
+      line-height: 1;
+      font-weight: 400;
+      }
+    }
+  }
+
+}
+
+
+  .h4:nth-child(2) {
+    font-family: 'Cormorant', serif;
+    font-size: 1.87rem;
+    line-height: 1.06;
+    font-weight: bold;
+    color:#232323;
+  }
+
+  .h4:nth-child(3) {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.94rem;
+    line-height: 1.73;
+    font-weight: 400;
+  }
+
+
+.lower-card {
+  margin-top: 10%;
+
+  .card-wrapper {
+    .h4:nth-child(1) {
+      font-family: 'Cormorant', serif;
+      font-size: 1.87rem;
+      line-height: 1.06;
+    }
+
+    .h4:nth-child(3) {
+      font-family: 'Cormorant', serif !important ;
+      font-size: 1.87rem;
+      line-height: 1.06;
+    }
+  }
+}
+.row{
+  display:flex;
+  justify-content: center;
+}

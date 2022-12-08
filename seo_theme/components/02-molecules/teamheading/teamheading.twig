@@ -1,0 +1,10 @@
+<div class="container team-text">
+{% block teamhead %}
+	{% for item in items %}
+		{% include "@atoms/text/headings/_heading.twig" with {
+      heading_level: item.level, 
+      heading: item.team_text,     
+    } %}
+	{% endfor %}
+  {% endblock %}
+</div>

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto:ital,wght@1,100&family=Work+Sans:wght@300&display=swap');
+
+.icon-svg {
+  text-align: center;
+  display: flex;
+
+  .card-wrapper {
+    .h4:first-child {
+      font-family: 'Cormorant Upright', serif !important;
+      line-height: 1.06;
+      font-weight: 400;
+      box-sizing: inherit;
+      font-size: 50px;
+    }
+
+    .h4:last-child {
+      font-family: 'Work Sans', sans-serif !important;
+      font-size: 0.94rem;
+      line-height: 1.73;
+      box-sizing: border-box;
+      word-break: break-word;
+      word-wrap: break-word;
+      font-weight: 400;
+      padding: 0 29px;
+    }
+  }
+
+  img {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}
+
+.card-wrapper {
+  overflow: hidden;
+}
+
+.card-wrapper {
+  picture {
+    img {
+      border:2px solid #f23801;
+      border-radius: 45px;
+      padding: 10px;
+      width: 4vw;
+    }
+  }
+}

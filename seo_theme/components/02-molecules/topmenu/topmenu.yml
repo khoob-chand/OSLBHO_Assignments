@@ -1,0 +1,12 @@
+menu:  
+  - title: 'Home'
+    url: '#'
+  - title: 'About'
+    url: '#'
+  - title: 'Services'
+    url: '#'
+  - title: 'Team'
+    url: '#'    
+
+src: https://mobirise.com/extensions/successm4/seo-agency/assets/images/logo.png 
+logotext: Mobirise   

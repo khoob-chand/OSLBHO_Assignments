@@ -1,0 +1,17 @@
+team_image_src: https://mobirise.com/extensions/successm4/seo-agency/assets/images/people44.jpg
+
+card:
+  - level: 3
+    team_text: Daily Flinn
+  - level: 3
+    team_text: Finance Manager  
+social_menu_items1:
+   - 
+    url: '#'
+    icon: 'twitter'
+   - 
+    url: '#'
+    icon: 'facebook'
+   - 
+    url: '#'
+    icon: 'instagram'

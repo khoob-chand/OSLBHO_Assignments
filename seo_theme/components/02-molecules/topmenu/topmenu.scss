@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Cormorant:wght@300&family=Roboto:ital,wght@1,100&family=Work+Sans:wght@300&display=swap');
+
+.header__logo {
+  .h3{
+    .h3__link{
+      font-family: 'Cormorant', serif;
+    font-size: 1.87rem;
+    font-weight: 700;
+    color:black;
+    letter-spacing: 0.1rem;
+    }
+
+
+    
+    
+  }
+  .image__logo{
+    .h3{
+      font-family: 'Cormorant', serif;
+      font-size: 1.87rem;
+      font-weight: 700;
+      color:black;
+      letter-spacing: 0.1rem;
+    }
+  
+  }
+  
+  display: flex;
+
+  transition: all .3s;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+  background: #ffffff;
+  height: 70px;
+}
+
+.header__logo {
+  
+
+  picture {
+    img {
+      cursor: pointer;
+      width: 3em;
+    }
+  }
+}
+
+nav {
+  margin: 0 auto;
+}
+
+.image__logo {
+  display: flex;
+  align-items: center;
+}
+
+.h3 {
+  padding-left: 2vw;
+}
+
+.main-menu__link:hover {
+ 
+  color: black;
+}
+
+.main-menu__link::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 0;
+  opacity: 1;
+  left: 3px;
+  top: 10px;
+  background: #f23801;
+  border-radius: 100%;
+  transition: all 0.2s ease-out;
+}
+
+.main-menu {
+  
+  li:nth-child(1):hover .main-menu__link::before {
+    height: 6px;
+    transform: translateY(15px);
+  }
+
+  li:nth-child(2):hover .main-menu__link::before {
+    height: 6px;
+    transform: translateY(13px);
+  }
+
+  li:nth-child(3):hover .main-menu__link::before {
+    height: 6px;
+    transform: translateY(13px);
+  }
+
+  li:nth-child(4):hover .main-menu__link::before {
+    height: 6px;
+    transform: translateY(13px);
+  }
+}
+.main-menu__link{
+  font-size: 0.94rem;
+  font-size: 0.94rem;
+   line-height: 1.73;
+}

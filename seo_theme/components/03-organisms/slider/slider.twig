@@ -1,0 +1,13 @@
+ {{ attach_library('seo_theme/sliderexample') }}
+
+<div class="slider"> 
+{% block slide_content %}
+  {% for item in slide %}
+    
+      {% include "@molecules/slide/slide.twig" with {
+        slide_src: item.slide_src1,
+      } %}
+  {% endfor %}
+ {% endblock %}   
+  </div>
+ 

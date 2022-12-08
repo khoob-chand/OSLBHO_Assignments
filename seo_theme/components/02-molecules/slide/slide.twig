@@ -1,0 +1,31 @@
+{% set paragraph_base_class ='slide_text' %}
+<div {{ bem('container' ,'','',['slide-image']) }}>
+	<div {{ bem('col-md-12 col-lg-12') }}>
+		<div {{ bem('author-box') }}>
+			<div {{ bem('image-box') }}>
+
+				{% include "@atoms/images/image/responsive-image.twig" with {
+              image_src: slide_src,
+             }%}
+
+			</div>
+		</div>
+    <p {{ bem(paragraph_base_class, paragraph_modifiers, paragraph_blockname) }}>
+  {% block slide_content %}
+    {{ slide_content }}
+  {% endblock %}
+</p>
+<div {{ bem('mbr-m-auto') }}>
+{% block slide %}
+{% for item in items %}
+ {% include "@atoms/text/headings/_heading.twig" with {
+        heading_level:3,
+        heading: item.slide_text_h3,
+     } %}
+      {% endfor %}
+{% endblock %}      
+  </div>    
+	</div>
+</div>
+
+

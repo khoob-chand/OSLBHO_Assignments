@@ -1,0 +1,46 @@
+
+
+<div {{ bem('row','','',['container','row-content']) }}>
+<div {{ bem('col-12','','',['featured-item']) }}>
+<div class="wrapper-item">
+{% block teamimage %}
+	{% include "@atoms/images/image/responsive-image.twig" with {
+         image_src:  team_image_src,
+
+   }%}
+   {%  endblock %}
+    <div class="bg-item">
+    
+  {% block teamheading %}
+   {% for item in card %}
+  
+     {% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: item.level, 
+        heading: item.team_text,
+
+    
+        
+      } %}
+      
+    {% endfor %} 
+    {% endblock %} 
+    {% block socialicon %}
+    {% include "@molecules/menus/social/social-menu.twig" with {
+       social_menu_items: social_menu_items1,
+  
+    }%}
+    {% endblock %}
+
+  </div>
+   </div>
+  </div>
+    
+
+
+
+   
+   
+  
+
+   </div>
+

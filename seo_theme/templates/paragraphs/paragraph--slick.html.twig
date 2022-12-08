@@ -1,0 +1,38 @@
+ {{ attach_library('seo_theme/sliderexample') }}
+ {# {{ attach_library('bartik/messages') }} #}
+{# {{ dd(content.field_slider_pop[0]['#paragraph'].field_slide_image.entity.fileuri) }}
+{{ dd(content.field_slider_pop[0]['#paragraph'].field_slide_paragraph.value|striptags) }} #}
+{# {{ dd(content.field_slider_pop[0]['#paragraph'].field_slide_text) }} #}
+
+
+
+
+{% block slide_content %}
+<div class="kpslider"> 
+  {% for item in content.field_slider_pop %}
+    {% if item['#paragraph'] %}
+      {% include "@molecules/slide/slide.twig" with {
+         slide_src: file_url(item['#paragraph'].field_slide_image.entity.fileuri),
+         slide_content: item['#paragraph'].field_slide_paragraph.value,
+      }%}
+    {% endif %} 
+  {% endfor %}
+  </div>
+ {% endblock %}   
+  {# </div> #}
+
+   {{ attach_library('seo_theme/sliderexample') }}
+
+<div class="kpslider"> 
+{# {% block slide_content1 %} #}
+  {% for item in content.field_slider_pop %}
+    {% if item['#paragraph'] %}
+      {% embed "@molecules/slide/slide.twig" with {
+         slide_src: file_url(item['#paragraph'].field_slide_image.entity.fileuri),
+         slide_content: item['#paragraph'].field_slide_paragraph.value,
+      }%}
+      {% endembed %}
+    {% endif %} 
+  {% endfor %}
+ {# {% endblock %}    #}
+  </div>

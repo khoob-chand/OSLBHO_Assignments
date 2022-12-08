@@ -1,0 +1,20 @@
+ 
+   {% for heading in teamheading  %}
+      {% include "@molecules/teamheading/teamheading.twig" with {
+        items: teamhead,
+      } %}
+   {% endfor %}   
+  
+  <div {{ bem('flex-content','','',['container']) }}>
+  {% for item in team %}
+    
+      {% include "@molecules/team/team.twig" with {
+         team_image_src:item.team_image_src1, 
+         
+                
+      } %}
+  {% endfor %} 
+
+ 
+  </div> 
+ 

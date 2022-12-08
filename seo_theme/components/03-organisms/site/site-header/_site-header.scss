@@ -1,0 +1,29 @@
+.header {
+  margin-bottom: 4em;
+
+  &__inner {
+    @include wrapper;
+
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__primary {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: $space 0;
+    align-items: center;
+    display: flex;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+    background: #ffffff;
+    height: 70px;
+  }
+
+  &__branding {
+    margin-right: $space;
+    max-width: 300px;
+  }
+}

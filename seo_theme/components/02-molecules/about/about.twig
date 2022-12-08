@@ -1,0 +1,29 @@
+<div class="aboutflexbox">
+<div class="text-wrapper">
+	{% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 6, 
+        heading: about_text,
+    } %}
+
+	{% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 6, 
+        heading: about_para_text,
+    } %}
+	{% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 6, 
+        heading: about_para_text_blog,
+    } %}
+</div>
+<div class="overlay-bg-color"></div>
+
+
+
+			<div class="img-wrap">
+      			{% include "@atoms/images/image/responsive-image.twig" with {
+              image_src: about_image_src,
+             }%}
+     
+      </div>
+     
+
+</div>

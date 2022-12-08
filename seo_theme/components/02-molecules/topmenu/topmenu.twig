@@ -1,0 +1,21 @@
+<div {{ bem('logo',[], 'header') }}>
+
+	<div {{ bem('logo',[], 'image') }}>
+		{% include "@atoms/images/image/responsive-image.twig" with {
+  image_src: src,
+
+}
+
+
+ %}
+		{% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 3,
+        heading: logotext,
+      } %}
+	</div>
+
+	{% include "@molecules/menus/main-menu/main-menu.twig" with {
+  menu_items: menu,
+} %}
+
+</div>

@@ -1,0 +1,29 @@
+team:
+  -
+    team_image_src1: https://mobirise.com/extensions/successm4/seo-agency/assets/images/people44.jpg
+
+  - 
+    team_image_src1: https://mobirise.com/extensions/successm4/seo-agency/assets/images/people43.jpg
+  -
+    team_image_src1: https://mobirise.com/extensions/successm4/seo-agency/assets/images/people42.jpg
+  - 
+    team_image_src1: https://mobirise.com/extensions/successm4/seo-agency/assets/images/people41.jpg
+
+teamheading: 
+  -
+teamhead:
+  - level: 1
+    team_text: TEAM
+  - level: 2
+    team_text: Meet our team
+  - level: 1
+    team_text: of creatives
+
+card:
+  - level: 3
+    team_text: Daily flinn
+  - level: 3
+    team_text: Finance Manager
+ 
+
+   

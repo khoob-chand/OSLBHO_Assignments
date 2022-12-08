@@ -1,0 +1,42 @@
+	{% set paragraph_base_class ="para_service_text" %}
+  <div class="container">
+  <div class="row">
+  <div class="col-12 text-align-center">
+  {% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 6, 
+        heading: service_text,
+      
+    
+        
+      } %}
+      {% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 1, 
+        heading: service_para_1,
+      
+    
+        
+      } %}
+      {% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 1, 
+        heading: service_para_2,
+      
+    
+        
+      } %}
+      {# <p {{ bem(paragraph_base_class) }}>
+			<em>{% block paragraph_content %}
+				{{ paragraph_content_service }}
+			{% endblock %}
+      </em>
+		</p> #}
+   <p {{ bem(paragraph_base_class) }}>
+     <em>{% include "@atoms/text/text/01-paragraph.twig" with {
+        paragraph_content:paragraph_content_service ,
+      } %}
+      </em>
+      </p>
+
+  </div> 
+  </div>   
+
+</div>      

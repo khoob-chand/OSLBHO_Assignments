@@ -1,0 +1,23 @@
+ {{ attach_library('seo_theme/sliderexample') }}
+
+ {% embed "@molecules/slide/slide.twig" with { 
+  
+  
+ slide_src: file_url(paragraph.field_slide_image.entity.fileuri),
+ slide_content:content["field_slide_paragraph"][0]["#text"]|striptags,
+
+
+
+}%}
+{% block slide %}
+{% for item in content.field_slide_text %}
+{% if item["#context"] %}
+ {% include "@atoms/text/headings/_heading.twig" with {
+        heading_level:3,
+        heading: item["#context"].value,
+     } %}
+     {% endif %}
+      {% endfor %}
+{% endblock %} 
+{% endembed %}
+ 

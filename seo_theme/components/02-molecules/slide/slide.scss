@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Cormorant:wght@300&family=Roboto:ital,wght@1,100&family=Work+Sans:wght@300&display=swap');
+
+.slide-image {
+  .image {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    box-shadow: none;
+    margin: 0;
+    object-fit: cover;
+  }
+}
+
+.author-box {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-box {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.slide_text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px !important;
+  text-align: center;
+  font-family: 'Cormorant', serif;
+  font-size: 1.87rem;
+  line-height: 1.06;
+  font-weight: 500;
+  color: black;
+  font-style: normal;
+}
+
+.mbr-m-auto {
+  margin: auto 0;
+
+  h3:nth-child(1) {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.94rem;
+    line-height: 1.73;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  h3:nth-child(2) {
+    text-align: center;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.94rem;
+    line-height: 1.73;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-weight: 400;
+    color: #767676;
+  }
+}

@@ -1,0 +1,35 @@
+.items-content {
+  height: 150px;
+  overflow: hidden;
+  .image{
+    width:120px;
+  }
+
+  .image:nth-child(1) {
+    img {
+      transform: translate(0, -100%);
+      transition: 0.3s;
+    }
+  }
+
+  .image:nth-child(2) {
+    img {
+      transform: translate(0, -100%);
+      transition: 0.3s;
+    }
+  }
+}
+
+.items-content:hover .image:nth-child(1) {
+  img {
+    transform: translate(0, 0);
+    transition: 0.3s;
+  }
+}
+
+.items-content:hover .image:nth-child(2) {
+  img {
+    transform: translate(0, 100%);
+    transition: 0.3s;
+  }
+}

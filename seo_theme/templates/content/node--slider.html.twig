@@ -1,0 +1,9 @@
+
+ {{ attach_library('seo_theme/sliderexample') }}
+
+{% embed "@organisms/slider/slider.twig" %}
+ {% block slide_content %}
+ {{ content.field_slide_paragraph }}
+ {% endblock %}
+ {% endembed %}
+

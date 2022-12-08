@@ -1,0 +1,35 @@
+<div {{ bem('flexbox-wrap-1','','',['container']) }}>
+{% block itemcard %}
+{% for item in cardcontent %}
+{% include "@molecules/servicecard/card.twig" with {
+    card_image_src: item.card_image_src2,
+} %}
+{% endfor %}
+{%  endblock %}
+
+</div>
+<div {{ bem('flexbox-wrap-2','','',['container']) }}>
+{% block uppercardblock %}
+{% for item in cardcontent %}
+{% include "@molecules/servicecard/card.twig" with {
+    card_image_src: item.card_image_src1,
+} %}
+{% endfor %}
+{% endblock %}
+</div>
+<div {{ bem('flexbox-wrap--card','','',['container','lower-card']) }}>
+{% block cardblock %}
+{% for item in carddetail %}
+
+{% include "@molecules/servicecard/card.twig" with {
+     
+    card_image_src:item.card_image_src1,
+    card_text: item.card_text1,
+    card_para_text:  item.card_para_text1, 
+
+}%}
+{% endfor %}
+{% endblock %}
+</div>
+
+

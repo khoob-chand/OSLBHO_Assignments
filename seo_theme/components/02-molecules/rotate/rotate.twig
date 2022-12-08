@@ -1,0 +1,19 @@
+<div {{ bem('container')}}>
+	<div {{ bem('row')}}>
+		<div {{ bem('col-12') }}>
+			<div {{ bem('item-image') }}>
+				<div {{ bem('items-content') }}>
+        	{% include "@atoms/images/image/responsive-image.twig" with {
+              image_src: rotate_image_src1,
+             }%}
+                	{% include "@atoms/images/image/responsive-image.twig" with {
+              image_src: rotate_image_src2,
+             }%}
+
+        </div>
+			</div>
+		</div>
+ 
+	</div>
+</div>
+

@@ -1,0 +1,26 @@
+<div {{ bem('container') }}>
+<div {{ bem('row') }}>
+<div {{ bem('col-6','','',['w-100','icon-svg']) }}> 
+   <div {{ bem('card-wrapper','','',['col-12']) }}>
+
+			{% include "@atoms/images/image/responsive-image.twig" with {
+         image_src:  card_image_src,
+
+   }%}
+  
+   	{% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 4, 
+        heading:card_text,
+    } %}
+    	{% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 4, 
+        heading:card_para_text,
+    } %}
+    </div>
+   
+    
+
+</div>
+		</div>
+    
+	</div>

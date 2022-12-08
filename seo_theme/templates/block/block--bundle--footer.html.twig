@@ -1,0 +1,8 @@
+{# {{ dd(content) }} #}
+ {% embed "@molecules/footer/footer.twig" with { 
+   footer_text:content["field_footer_copyright_text"][0]["#context"].value,
+   footer_image_src: file_url(content.field_footer_image["#items"].entity.fileuri),
+
+
+}%}
+{% endembed %}

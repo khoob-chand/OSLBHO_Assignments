@@ -1,0 +1,14 @@
+<div {{ bem('container') }}> 
+<div {{ bem('rotate','','',['container']) }}>
+{% block rotate %}
+{% for item in rotate %}
+{% include "@molecules/rotate/rotate.twig" with {
+   rotate_image_src2: item.rotate_image_2,
+   rotate_image_src1: item.rotate_image_1,
+ 
+
+}%}
+{% endfor %}
+{% endblock %}
+</div>
+</div>
