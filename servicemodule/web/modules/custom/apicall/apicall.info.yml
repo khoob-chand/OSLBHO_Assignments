@@ -1,0 +1,5 @@
+name: 'apicall'
+type: module
+description: 'My new Module'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

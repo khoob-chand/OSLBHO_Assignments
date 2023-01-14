@@ -1,0 +1,85 @@
+<?php
+
+
+
+use Drupal\node\Entity\Node;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Using hook_form_alter to alter submit action.
+ */
+// function event_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+
+//   if ($form_id == "node_event_edit_form") {
+//           $form['actions']['submit']['#submit'][] = 'event_submit_action';   
+//   }
+ 
+// }
+// function event_submit_action(&$form, FormStateInterface &$form_state){
+//   $nodes =  \Drupal\node\Entity\Node::load(94);
+ 
+// // foreach($nodes)
+// $start=$nodes->get('field_event_date')[0]->value;
+// $end=$nodes->get('field_event_date')[0]->end_value;
+
+// $set=$nodes->field_event_submit->value="hello";
+
+// $date1=date('y-m-d');
+
+// // $date2='31_12_11';
+
+// if(strtotime($date1) >= strtotime($start)&& strtotime($date1) < strtotime($end)){ 
+//   $set=$nodes->field_event_submit->value="Occuring events";
+//   // dd($set);
+
+
+// }
+// elseif(strtotime($date1) < strtotime($end)){
+//   $set=$nodes->field_event_submit->value="future_event";
+// }
+// elseif(strtotime($date1) > strtotime($end)){
+//   $set=$nodes->field_event_submit->value="previous_event";
+// }
+// $nodes->save();
+
+// }
+
+function event_entity_presave(Drupal\Core\Entity\EntityInterface $nodes) {
+  switch ($nodes->bundle()) {
+    // Here you modify only your day content type
+    case 'event':
+      $start=$nodes->get('field_event_date')[0]->value;
+     $end=$nodes->get('field_event_date')[0]->end_value;
+
+   $set=$nodes->field_event_submit->value="hello";
+
+  $date1=date('y-m-d');
+
+
+
+if(strtotime($date1) >= strtotime($start)&& strtotime($date1) < strtotime($end)){ 
+  $set=$nodes->field_event_submit->value="Occuring events";
+  dpm($set);
+
+
+
+}
+elseif(strtotime($date1) < strtotime($end)){
+  $set=$nodes->field_event_submit->value="future_event";
+  dpm($set);
+ 
+}
+elseif(strtotime($date1) > strtotime($end)){
+  $set=$nodes->field_event_submit->value="previous_event";
+  dpm($set);
+ 
+}
+// $nodes->save();
+
+
+
+      
+     break;
+  }
+}

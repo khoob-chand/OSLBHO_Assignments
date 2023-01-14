@@ -5,6 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_course_date_range
+    - field.field.node.page.field_course_timing
+    - field.field.node.page.field_professors
+    - field.field.node.page.field_students_enrolled_
+    - field.field.node.page.field_title
     - node.type.page
   module:
     - text
@@ -27,4 +32,10 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_course_date_range: true
+  field_course_timing: true
+  field_professors: true
+  field_students_enrolled_: true
+  field_title: true
+  search_api_excerpt: true

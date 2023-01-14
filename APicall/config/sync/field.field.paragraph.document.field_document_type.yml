@@ -1,0 +1,19 @@
+uuid: e3046560-5335-4101-ac5e-63fc4313b30b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_document_type
+    - paragraphs.paragraphs_type.document
+id: paragraph.document.field_document_type
+field_name: field_document_type
+entity_type: paragraph
+bundle: document
+label: document_type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

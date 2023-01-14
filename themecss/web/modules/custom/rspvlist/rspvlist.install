@@ -1,0 +1,69 @@
+<?php
+
+function rspvlist_schema(){
+    $schema['rspvlist']=[
+        'description'=>'create repvlist_schema',
+        'fields'=>[
+            'id'=>[
+                'descrition'=>'create fields',
+                'type'=>'serial',
+                'size'=>'small',
+                'unsigned'=>TRUE,
+                'not null'=>TRUE,
+            ],
+            'uid'=>[
+                'description'=>'create uid {user}.uid',
+                'type'=>'int',
+                'not null'=>TRUE,
+                'default'=>0,
+                'unsigned'=>TRUE,
+
+            ],
+            'nid'=>[
+                'description'=>'create uid{node}.uid',
+                'type'=>'int',
+                'not null'=>TRUE,
+                'default'=>0,
+                'unsigned'=>TRUE,
+
+            ],
+            'mail'=>[
+                'description'=>'create mail field',
+                'type'=>'varchar',
+                'length'=>40,
+                'default'=>0,
+                'not null'=>TRUE,
+
+
+            ],
+            'created'=>[
+                'descrition'=>'create crated fields',
+                'type'=>'int',
+                'default'=>0,
+                'not null'=>TRUE,
+
+            ],
+        ],
+        'primary key'=>['id'],
+        'indexes'=>[
+            'node'=>['nid'],
+            'node_user'=>['nid','uid'],
+        ],
+
+    ];
+    $schema['rpvlist_enabled']=[
+        'description'=>'tracks rspv ',
+        'fields'=>[
+            'nid'=>[
+                'description'=>'nid id {node}.nid',
+                'type'=>'int',
+                'not null'=>TRUE,
+                'default'=>0,
+                'unsigned'=>TRUE,
+            ],
+        ],
+        'primary key'=>['nid'],
+    ];
+
+    return $schema;
+}

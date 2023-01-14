@@ -1,0 +1,25 @@
+uuid: 7bda51a9-c6a3-4ab0-8d52-8a39c94ada85
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_hero:9d75663b-d367-4487-a592-c2b0473028db'
+  module:
+    - block_content
+  theme:
+    - Theming_css
+id: hero_2
+theme: Theming_css
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:9d75663b-d367-4487-a592-c2b0473028db'
+settings:
+  id: 'block_content:9d75663b-d367-4487-a592-c2b0473028db'
+  label: hero_2
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

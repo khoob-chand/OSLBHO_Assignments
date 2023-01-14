@@ -1,0 +1,22 @@
+uuid: 866a2253-518b-4de7-b32d-638aa5d6d622
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - Theming_css
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: Theming_css_help
+theme: Theming_css
+region: header
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,10 @@
+# services:
+#   calculator.kuchbhi:
+#     class: Drupal\calculator\Services\Calculation
+#     arguments: []
+
+
+services:
+  calculator.kuch:
+    class: Drupal\calculator\Adding
+    arguments: []    

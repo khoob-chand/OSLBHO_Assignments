@@ -1,0 +1,15 @@
+mymodule.kuchbhi:
+  path: '/control'
+  defaults: 
+    _controller: '\Drupal\mymodule\Controller\FirstController::simplecontent'
+    _title: 'My first Controller'
+  requirements:
+    _permission: 'access content'  
+
+mymodule.kuchbhi2:
+  path: '/control/{name1}/{name2}'
+  defaults: 
+    _controller: '\Drupal\mymodule\Controller\FirstController::variable'
+    _title: 'My first Controller'
+  requirements:
+    _permission: 'access content'      

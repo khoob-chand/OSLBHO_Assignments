@@ -1,0 +1,8 @@
+uuid: 54cd7eba-76d6-4151-8528-9c81c0e187da
+langcode: en
+status: true
+dependencies: {  }
+id: custom_hero
+label: 'custom hero'
+revision: 0
+description: ''

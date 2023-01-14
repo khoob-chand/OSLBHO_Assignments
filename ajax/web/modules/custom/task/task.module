@@ -1,0 +1,65 @@
+<?php
+use Drupal\node\Entity\Node;
+
+function ajax_example_node_presave(Drupal\Core\Entity\EntityInterface $node) {
+  
+dpm($node);
+  $user=$node->getOwner()->name->value;
+  $date=$node->getCreatedTime();
+  $format=2012-02-32;
+  $d=\Drupal::service('date.formatter')->format($date, '$format');
+
+  $prev=$node->title->value;
+  $after=$node->original->title->value;
+
+
+ 
+  $values = [
+    'type' => 'log',
+  ];
+
+  $nodes = \Drupal::entityTypeManager()
+  ->getStorage('node')
+  ->loadByProperties($values);
+ 
+//  dpm($nodes['nid']);
+    // $s=$nodes[56]->set('field_previous_value', $prev);
+    // dd($s);
+  
+     dpm($nodes[56]->field_previous_value->value=$prev);
+     dpm($nodes[56]->field_new_value->value=$after);
+     dpm($nodes[56]->field_created_date->value=$d);
+     dpm($nodes[56]->field_user->value=$user);
+    
+
+      
+//     //  $a=$nodes[56]->field_previous_value->value=$prev;
+//     // $b=$nodes[56]->field_new_value->value=$after;
+//     //  $c=$nodes[56]->field_created_date->value=$d;
+//     //  $d=$nodes[56]->field_user->value=$user;
+//     //  field_attach_update('node', $a);
+//     //  field_attach_update('node', $b);
+//     //  field_attach_update('node', $c);
+//     //  field_attach_update('node', $d);
+//     // $no = Node::create([
+//     //   'type'        => 'log',
+//     //   'title'       => 'Druplicon test',
+//     //   'field_previous_value' => $prev,
+//     //   'field_new_value' => $after,
+        
+        
+      
+//     // ]);
+//     // $no->save();
+
+// // $save= $nodes[56];
+
+// // dpm($save);
+// // node_save($save);
+// // $save->save();
+
+
+  
+// }
+// // $save->save();
+}

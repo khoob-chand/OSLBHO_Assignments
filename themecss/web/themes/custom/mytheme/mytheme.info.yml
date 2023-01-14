@@ -1,0 +1,19 @@
+name: themingcss
+type: theme
+description: this is my first theme project
+core_version_requirement: ^8 || ^9
+base theme: bartik
+screenshot: mytheme.png
+libraries:
+  - mytheme/global-styling
+regions:
+  header: header
+  highlighted: hero
+  content: content
+  sidebar_first: sidebar first
+  featured_bottom_first: Featured_bottom_first
+  footer_first: footer_first
+  footer_second: footer_second
+  footer_third: footerthird
+  footer_fourth: footerfouth
+  footer_fifth: footerfifth

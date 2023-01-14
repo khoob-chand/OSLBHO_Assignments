@@ -1,0 +1,53 @@
+<?php
+
+use Drupal\node\Entity\Node;
+use Drupal\Core\Entity\EntityInterface;
+
+
+function cron_job_cron()
+{
+
+  $newArr = [];
+
+  $query = \Drupal::entityQuery('node');
+
+  $query->condition('type', 'article');
+  $entity_ids = $query->execute();
+
+  $storage = \Drupal::entityTypeManager()->getStorage('node');
+
+  $node = $storage->loadMultiple($entity_ids);
+  // dd($node[88]);
+
+
+
+
+
+
+  foreach ($node as $id) {
+
+
+
+    $link = $id->field_link;
+    foreach ($link as $i) {
+
+      $nest = $i->uri;
+      array_push($newArr, $nest);
+    }
+  }
+ 
+}
+
+function cron_job_entity_insert(EntityInterface $entity) {
+  if ($entity->getEntityTypeId() !== 'node') {
+    return;
+  }
+  if ($entity->isPublished()) {
+    return;
+  }
+
+  $queue = \Drupal::queue( name: 'cron_node_publisher');
+   $item = $entity->id();
+   $queue->createItem($item);
+
+}

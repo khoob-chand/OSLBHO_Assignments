@@ -1,0 +1,42 @@
+uuid: 06a5645e-3e0c-4494-973b-94194091605d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about.field_address
+    - field.field.paragraph.about.field_biodata
+    - field.field.paragraph.about.field_dob
+    - paragraphs.paragraphs_type.about
+  module:
+    - datetime
+id: paragraph.about.default
+targetEntityType: paragraph
+bundle: about
+mode: default
+content:
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_biodata:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_dob:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

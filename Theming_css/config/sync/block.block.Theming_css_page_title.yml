@@ -1,0 +1,20 @@
+uuid: cfc3bc71-d1ee-45f5-9b78-1acdd0a06703
+langcode: en
+status: false
+dependencies:
+  theme:
+    - Theming_css
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: Theming_css_page_title
+theme: Theming_css
+region: header
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

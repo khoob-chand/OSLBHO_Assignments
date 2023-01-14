@@ -1,0 +1,21 @@
+uuid: 5480da56-5304-4961-893f-4cba47e8a5e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_timing
+    - node.type.page
+id: node.page.field_course_timing
+field_name: field_course_timing
+entity_type: node
+bundle: page
+label: 'Course timing'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1667314278
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

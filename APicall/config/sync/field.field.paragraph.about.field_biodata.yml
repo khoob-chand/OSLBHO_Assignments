@@ -1,0 +1,19 @@
+uuid: f3620e76-38c9-42d5-9fba-3bed7cde7a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_biodata
+    - paragraphs.paragraphs_type.about
+id: paragraph.about.field_biodata
+field_name: field_biodata
+entity_type: paragraph
+bundle: about
+label: Biodata
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

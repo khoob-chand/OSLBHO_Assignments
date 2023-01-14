@@ -1,0 +1,5 @@
+name: customform
+type: module
+package: custom
+core_version_requirement: ^8 || ^9
+description: "my awesome module"

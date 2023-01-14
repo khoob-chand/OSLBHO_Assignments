@@ -1,0 +1,30 @@
+uuid: 32cf4631-9cf0-455d-b326-523307eabc5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_banner_image
+field_name: field_banner_image
+entity_type: block_content
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: 905b1fa1-e883-48fa-aa6b-46e71a0ee258
+    alt: ''
+    title: ''
+    width: 1058
+    height: 309
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

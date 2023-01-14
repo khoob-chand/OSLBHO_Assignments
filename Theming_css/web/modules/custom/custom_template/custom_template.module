@@ -1,0 +1,15 @@
+<?php 
+
+
+
+
+  function custom_template_theme($existing, $type, $theme, $path) {
+    return [
+      'my_template' => [
+        'variables' => ['test_var' => " ",'body'=>" ",'title'=>" ",'image'=>" ",],
+
+        
+      ],
+    ];
+  
+  }

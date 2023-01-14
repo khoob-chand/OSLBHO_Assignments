@@ -1,0 +1,23 @@
+uuid: 8b281f50-d0dc-47c3-8be2-9ef11878e4a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fdfds
+    - node.type.article
+id: node.article.field_fdfds
+field_name: field_fdfds
+entity_type: node
+bundle: article
+label: fdfds
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

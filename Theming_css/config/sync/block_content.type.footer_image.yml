@@ -1,0 +1,8 @@
+uuid: bd9822bb-228e-401a-88e0-ca2dd0d1d51b
+langcode: en
+status: true
+dependencies: {  }
+id: footer_image
+label: 'footer image'
+revision: 0
+description: ''

@@ -1,0 +1,50 @@
+custom_db_form:
+  path: '/ajax/demo'
+  defaults:
+    _form: '\Drupal\ajax_example\Form\Ajaxexample'
+    _title: 'Ajax Example'
+  requirements:
+    _permission: 'access content'
+
+
+custom_db_form_ajax:
+  path: '/ajax/demo/1'
+  defaults:
+    _form: '\Drupal\ajax_example\Form\AjaxExampleForm'
+    _title: 'Ajax Example'
+  requirements:
+    _permission: 'access content'    
+
+custom_db_form_ajax_csv:
+  path: '/ajax/demo/2'
+  defaults:
+    _form: '\Drupal\ajax_example\Form\CsvForm'
+    _title: 'Ajax Example'
+  requirements:
+    _permission: 'access content'       
+
+custom_db_form_ajax_csv_list:
+  path: '/intake'
+  defaults:
+    _controller: '\Drupal\ajax_example\Controller\IntakeController::content'
+    _title: 'Ajax Example'
+  requirements:
+    _permission: 'access content' 
+
+custom_db_form_ajax_csv_list_filter:
+  path: '/filter'
+  defaults:
+    _form: '\Drupal\ajax_example\Form\ListingFilter'
+    # _controller: '\Drupal\ajax_example\Controller\IntakeController::content'
+    _title: 'Ajax Example'
+  requirements:
+    _permission: 'access content'     
+
+custom_db_form_ajax_csv_list_filter_logger:
+  path: '/message'
+  defaults:
+    # _form: '\Drupal\ajax_example\Form\ListingFilter'
+    _controller: '\Drupal\ajax_example\Controller\Logger::simple'
+    _title: 'Ajax Example'
+  requirements:
+    _permission: 'access content'           

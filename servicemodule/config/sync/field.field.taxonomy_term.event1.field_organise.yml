@@ -1,0 +1,28 @@
+uuid: d6da59c8-3a0d-4814-80e0-ba201813afc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_organise
+    - taxonomy.vocabulary.event1
+id: taxonomy_term.event1.field_organise
+field_name: field_organise
+entity_type: taxonomy_term
+bundle: event1
+label: organise
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event1: event1
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

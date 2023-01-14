@@ -1,0 +1,4 @@
+<?php 
+function moduledevel_page_attachments(array &$page){
+    $page['#attached']['library'][]='moduledevel/global_styling';
+}

@@ -1,0 +1,91 @@
+
+<?php
+// use Drupal\paragraphs\Entity\Paragraph;
+// use Drupal\taxonomy\Entity\Term;
+// use Drupal\profile\Entity\Profile;
+// use Drupal\user\Entity\User;
+// use Drupal\Core\Ajax\AjaxResponse;
+// use Drupal\Core\Form\FormBase;
+// use Drupal\Core\Form\FormStateInterface;
+// use Drupal\Core\Ajax\HtmlCommand;
+// use Drupal\Core\Ajax\ReplaceCommand;
+// function postapi_form_alter(&$form, FormStateInterface $form_state, $form_id)
+// {
+//   if ($form_id == 'profile_student_edit_form') {
+//     $form['field_exam']['output'] = [
+//       '#type' => 'container',
+//       '#attributes' => ['id' => 'edit-output'],
+//     ];
+//     $form['field_exam']['output']['textfields'] = [
+//       '#type' => 'fieldset',
+//       '#title' => "Please select a test",
+//     ];
+//     /*********************************/
+//     $num = 0;
+//     $form['field_exam']['widget']['#ajax'] = array(
+//       'callback' => 'myAjaxCallback',
+//       'disable-refocus' => FALSE,
+//       // Or TRUE to prevent re-focusing on the triggering element.
+//       'event' => 'change',
+//       'wrapper' => 'edit-output',
+//       // This element is updated with this AJAX callback.
+//       'progress' => [
+//         'type' => 'throbber',
+//       ],
+//     );
+//     if ($form_state->getValue('field_exam') != null) {
+//       // dpm($form_state->getFields());
+//       $target_id = ($form_state->getValue('field_exam'))[0]['target_id'];
+//       $exam_field = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($target_id);
+//       $vid = $exam_field->vid[0]->target_id;
+//       $parent_tid = $target_id; // the parent term id
+//       $depth = 1; // 1 to get only immediate children, NULL to load entire tree
+//       $load_entities = FALSE; // True will return loaded entities rather than ids
+//       $child_terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($vid, $parent_tid, $depth, $load_entities);
+//       $sub_terms = [];
+//       foreach ($child_terms as $child_term) {
+//         $sub_terms[] = $child_term->name;
+//       }
+//       foreach ($sub_terms as $item) {
+//         $num += 1;
+//         $form['field_exam']['output']['textfields'][$num] = array(
+//           '#type' => 'textfield',
+//           '#title' => '<h4>' . $item . '</h4>',
+//         );
+//       }
+//     }
+//   }
+//   $form['actions']['submit']['#submit'][] = 'custom_submit';
+// }
+// function myAjaxCallback(array &$form, FormStateInterface $form_state)
+// {
+//   return $form['field_exam']['output'];
+// }
+// function custom_submit(array &$form, FormStateInterface $form_state)
+// {
+//   // dd($form_state);
+//   $profile_type = 'student';
+//   $user_id =1;
+//   $current_user = User::load($user_id);
+//   $active_profile = \Drupal::entityTypeManager()->getStorage('profile')->loadByUser($current_user, $profile_type);
+//   $target_id = ($form_state->getValue('field_exam'))[0]['target_id'];
+//   // dd($target_id);
+//   $exam_field = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($target_id);
+//   $vid = $exam_field->vid[1]->target_id;
+//   $parent_tid = $target_id; // the parent term id
+//   $depth = 1; // 1 to get only immediate children, NULL to load entire tree
+//   $load_entities = FALSE; // True will return loaded entities rather than ids
+//   $child_terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($vid, $parent_tid, $depth, $load_entities);
+//   $sub_terms = [];
+//   foreach ($child_terms as $child_term) {
+//     $sub_terms[] = $child_term->name;
+//   }
+//   // dd($sub_terms);
+//   $sum = 0;
+//   for ($i = 1; $i <= count($sub_terms); $i++) {
+//     $marksExams = $form_state->getValue($i);
+//     $sum += $marksExams;
+//   }
+//   $active_profile->set("field_total_marks", $sum);
+//   $active_profile->save();
+// }

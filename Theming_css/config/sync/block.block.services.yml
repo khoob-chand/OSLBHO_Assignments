@@ -1,0 +1,25 @@
+uuid: 68f5e0a0-31b1-41c4-86c6-7cbe33925d67
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.services
+  module:
+    - system
+  theme:
+    - Theming_css
+id: services
+theme: Theming_css
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:services'
+settings:
+  id: 'system_menu_block:services'
+  label: Services
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

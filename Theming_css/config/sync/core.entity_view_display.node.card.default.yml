@@ -1,0 +1,70 @@
+uuid: d29ec50a-9d2d-49a2-9691-e73b3362a754
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.card.body
+    - field.field.node.card.field_image
+    - field.field.node.card.field_link
+    - field.field.node.card.field_name
+    - field.field.node.card.field_post
+    - image.style.medium
+    - node.type.card
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.card.default
+targetEntityType: node
+bundle: card
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_post:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  links: true

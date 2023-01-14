@@ -18,10 +18,16 @@
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.2",
         "drupal/console": "^1.9",
+        "drupal/contentimport": "^9.3",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/csv_importer": "^1.14",
+        "drupal/devel": "^5.0",
+        "drupal/imce": "^2.5",
         "drupal/paragraphs": "^1.15",
+        "drupal/restui": "^1.21",
+        "drupal/search_api": "^1.15",
         "drush/drush": "^11.2"
     },
     "conflict": {

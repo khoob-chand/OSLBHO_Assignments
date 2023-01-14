@@ -1,0 +1,21 @@
+uuid: 51535edc-a564-4120-b261-00bc2de71340
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.test.field_testname
+    - paragraphs.paragraphs_type.test
+id: paragraph.test.default
+targetEntityType: paragraph
+bundle: test
+mode: default
+content:
+  field_testname:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 22c64ab1-df53-4f4c-a523-b6427c60e352
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.organisation
+  module:
+    - system
+  theme:
+    - Theming_css
+id: organisation
+theme: Theming_css
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:organisation'
+settings:
+  id: 'system_menu_block:organisation'
+  label: organisation
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

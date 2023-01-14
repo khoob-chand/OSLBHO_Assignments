@@ -1,0 +1,5 @@
+name: dummy
+type: module
+package: custom
+description: 'first module'
+core_version_requirement: ^8 || ^9

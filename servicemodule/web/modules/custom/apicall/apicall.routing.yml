@@ -1,0 +1,7 @@
+apicall.kuchbhi:
+  path: '/home'
+  defaults:
+    _controller:  'Drupal\apicall\Controller\MyController::content'
+    _title: 'Just a simple form'
+  requirements:
+    _permission: 'access content'

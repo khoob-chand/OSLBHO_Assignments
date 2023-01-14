@@ -1,0 +1,41 @@
+uuid: d8d16e05-7fcb-4dba-8415-405815f83fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.document.field_date
+    - field.field.paragraph.document.field_document_type
+    - field.field.paragraph.document.field_upload_file
+    - paragraphs.paragraphs_type.document
+  module:
+    - datetime
+    - file
+id: paragraph.document.default
+targetEntityType: paragraph
+bundle: document
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_document_type:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_upload_file:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

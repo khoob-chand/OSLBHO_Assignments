@@ -1,0 +1,25 @@
+uuid: cde83a66-3429-4081-85ab-b6037c2f171b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - Theming_css
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: Theming_css_branding
+theme: Theming_css
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

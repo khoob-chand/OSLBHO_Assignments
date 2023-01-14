@@ -1,0 +1,25 @@
+uuid: a1792539-8274-4279-8bb0-59aa63e0f6ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_image:b0722681-4bb6-4878-9f18-a998a14598f1'
+  module:
+    - block_content
+  theme:
+    - Theming_css
+id: footer
+theme: Theming_css
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:b0722681-4bb6-4878-9f18-a998a14598f1'
+settings:
+  id: 'block_content:b0722681-4bb6-4878-9f18-a998a14598f1'
+  label: footer
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

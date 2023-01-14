@@ -1,0 +1,33 @@
+uuid: 9a2759a1-d8b1-439b-9338-bac6ea439620
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testname
+    - paragraphs.paragraphs_type.test
+    - taxonomy.vocabulary.subject
+  content:
+    - 'taxonomy_term:subject:793ad6d9-7795-4ea3-90d6-68fd99da372d'
+id: paragraph.test.field_testname
+field_name: field_testname
+entity_type: paragraph
+bundle: test
+label: testname
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 793ad6d9-7795-4ea3-90d6-68fd99da372d
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subject: subject
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: e2777fed-7920-4a36-8393-ce0faf56e734
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.for-bussiness
+  module:
+    - system
+  theme:
+    - Theming_css
+id: forbussiness
+theme: Theming_css
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:for-bussiness'
+settings:
+  id: 'system_menu_block:for-bussiness'
+  label: 'For bussiness'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

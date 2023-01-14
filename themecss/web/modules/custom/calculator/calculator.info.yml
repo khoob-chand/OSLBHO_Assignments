@@ -1,0 +1,5 @@
+name: calculator
+type: module
+package: custom
+description: add two number
+core_version_requirement: ^8 || ^9

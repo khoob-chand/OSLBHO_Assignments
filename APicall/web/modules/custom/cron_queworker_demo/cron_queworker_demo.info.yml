@@ -1,0 +1,5 @@
+name: Cron and quewoker Demo
+type: module
+description: A module to execute cron and queworker
+core_version_requirement: ^9 || ^10
+package: Custom

@@ -1,0 +1,21 @@
+uuid: 2a279960-cdcf-44e5-a636-8ffad8a33152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year
+    - paragraphs.paragraphs_type.education
+  module:
+    - datetime
+id: paragraph.education.field_year
+field_name: field_year
+entity_type: paragraph
+bundle: education
+label: year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

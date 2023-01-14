@@ -1,0 +1,25 @@
+uuid: f369c3d9-d1a4-481b-a97f-393fe1cf2a6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.theming_web_form
+  module:
+    - webform
+  theme:
+    - Theming_css
+id: webform
+theme: Theming_css
+region: content
+weight: -8
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: visible
+  provider: webform
+  webform_id: theming_web_form
+  default_data: ''
+  redirect: false
+visibility: {  }

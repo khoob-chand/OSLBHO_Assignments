@@ -1,0 +1,7 @@
+rspvlist.kuchbhi:
+  path: '/rspv'
+  defaults:
+    _form: '\Drupal\rspvlist\Form\FirstForm'
+    _title: 'First rspv list form'
+  requirements:
+    _permission: 'permitcontent'  

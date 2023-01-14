@@ -1,0 +1,6 @@
+mymodule.menu:
+  title: menu
+  description: your menu
+  route_name: mymodule.kuchbhi
+  weight: 5
+  menu_name: main

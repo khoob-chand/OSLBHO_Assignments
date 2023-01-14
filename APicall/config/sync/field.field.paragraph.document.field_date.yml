@@ -1,0 +1,21 @@
+uuid: cdb1ce87-3779-4a55-9f64-2523deb38d50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.document
+  module:
+    - datetime
+id: paragraph.document.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: document
+label: date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

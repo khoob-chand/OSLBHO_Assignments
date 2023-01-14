@@ -1,0 +1,21 @@
+uuid: 93322b7a-f620-4543-a760-ee6e8b3771bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_date_range
+    - node.type.page
+  module:
+    - datetime
+id: node.page.field_course_date_range
+field_name: field_course_date_range
+entity_type: node
+bundle: page
+label: 'Course date range'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -16,9 +16,13 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/better_exposed_filters": "^6.0",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/paragraphs": "^1.15",
+        "drupal/restui": "^1.21",
+        "drupal/views_data_export": "^1.2",
         "drush/drush": "^11.2"
     },
     "conflict": {

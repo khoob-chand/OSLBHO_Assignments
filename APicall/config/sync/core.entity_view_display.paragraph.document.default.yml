@@ -1,0 +1,43 @@
+uuid: 57349a4e-9bac-463a-aba1-8d20bdb0c160
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.document.field_date
+    - field.field.paragraph.document.field_document_type
+    - field.field.paragraph.document.field_upload_file
+    - paragraphs.paragraphs_type.document
+  module:
+    - datetime
+    - file
+id: paragraph.document.default
+targetEntityType: paragraph
+bundle: document
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_document_type:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_upload_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

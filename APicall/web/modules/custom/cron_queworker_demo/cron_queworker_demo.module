@@ -1,0 +1,56 @@
+<?php
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Queue\QueueFactory;
+use Drupal\Core\Queue\QueueInterface;
+use Drupal\node\Entity\Node;
+
+
+// use Laminas\Feed\PubSubHubbub\Publisher;
+
+/**
+ * Implements hook_cron().
+ */
+
+
+
+function cron_queworker_demo_cron() {
+
+  $imgurl=[];
+   $query = \Drupal::entityQuery('node');
+  
+  // $query->condition('status',0 );
+  $query->condition('type', 'article');
+  $entity_ids = $query->execute();
+  $storage = \Drupal::entityTypeManager()->getStorage('node');
+  $view_result = $storage->loadMultiple($entity_ids);
+
+  foreach($view_result as $id){
+  
+    $img_url=$id->field_field_image_url;
+     foreach($img_url as $u){
+        $link= $u->uri;
+        array_push($imgurl, $link);
+     }
+
+  }
+
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function cron_queworker_demo_entity_insert(EntityInterface $entity) {
+  if ($entity->getEntityTypeId() !== 'node') {
+    return;
+  }
+
+  if ($entity->isPublished()) {
+    return;
+  }
+
+
+  $queue = \Drupal::queue('cron_node_publisher');
+   $item = $entity->id();
+   $queue->createItem($item);
+
+}

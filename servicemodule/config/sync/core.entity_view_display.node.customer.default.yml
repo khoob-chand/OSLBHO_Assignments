@@ -1,0 +1,67 @@
+uuid: 3db6e997-bbd0-4e57-b315-056fd34eb600
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.customer.field_course_name
+    - field.field.node.customer.field_course_start_date
+    - field.field.node.customer.field_description
+    - field.field.node.customer.field_professor
+    - field.field.node.customer.field_studentenrolled
+    - node.type.customer
+  module:
+    - datetime
+    - text
+    - user
+id: node.customer.default
+targetEntityType: node
+bundle: customer
+mode: default
+content:
+  field_course_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_course_start_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_professor:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_studentenrolled:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true

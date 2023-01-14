@@ -1,0 +1,12 @@
+<?php 
+
+
+function ajax_example_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  switch ($entity->bundle()) {
+    // Here you modify only your day content type
+    case 'article':
+      // Setting the title with the value of field_date.
+      $entity->setTitle("presave is working");
+     break;
+  }
+}

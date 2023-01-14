@@ -1,0 +1,19 @@
+uuid: c07267c0-3fcf-43fa-b118-eb6f165f01de
+langcode: en
+status: true
+dependencies:
+  module:
+    - postapi
+    - serialization
+    - user
+id: dummy_api
+plugin_id: dummy_api
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

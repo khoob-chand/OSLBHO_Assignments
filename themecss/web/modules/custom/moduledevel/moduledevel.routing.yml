@@ -1,0 +1,8 @@
+moduledevel.kuchbhi:
+  path: '/moduledevel'
+  defaults:
+    _title: 'my module development dummy page '
+    _controller: '\Drupal\moduledevel\Controller\FirstController::content'
+  requirements:
+    _permission: 'access content'
+

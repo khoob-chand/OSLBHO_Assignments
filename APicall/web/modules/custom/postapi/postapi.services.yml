@@ -1,0 +1,23 @@
+services:
+  postapi.tools:
+    class: Drupal\postapi\services\Demopostapi
+
+  postapi.about:
+    class: Drupal\postapi\services\About
+
+  postapi.education:
+    class: Drupal\postapi\services\Education
+
+  postapi.user:
+    class: Drupal\postapi\services\user 
+
+  postapi.test:
+    class: Drupal\postapi\services\Test 
+  
+  postapi.document:
+    class: Drupal\postapi\services\Document   
+ 
+  postapi.update:
+    class: Drupal\ajax_exampe\services\update     
+
+ 

@@ -1,0 +1,8 @@
+customform.kuchbhi:
+  path: '/osl'
+  defaults:
+    # _controller:  'Drupal\customform\Controller\CustomFormController::content'
+    _form: 'Drupal\customform\Form\CustomFormController'
+    _title: 'Just a simple form'
+  requirements:
+    _permission: 'access content'

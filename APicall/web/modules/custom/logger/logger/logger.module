@@ -1,0 +1,42 @@
+<?php
+// use Drupal\node\Entity\Node;
+// use Drupal\Core\Form\FormBase;
+// use Drupal\Core\Form\FormStateInterface;
+
+//   foreach ($contentTypes as $contentType) {
+//     if ($contentType->id() != "log") {
+//       array_push($types, $contentType->id());
+//     }
+//   }
+//   foreach ($types as $contentType) {
+//     if ($form_id == "node_" . $contentType . "_edit_form") {
+//       $form['actions']['submit']['#submit'][] = 'logger_submit_action';
+//     }
+//   }
+
+
+// /**
+//  * Using logger to create log between different revisions.
+//  */
+// function logger_submit_action(&$form, FormStateInterface &$form_state) {
+//   $nodeDetails = $form_state->getformObject()->getEntity();
+//   $nid = $nodeDetails->nid->value;
+//   $revisionid = $nodeDetails->vid->value;
+//   $updatedTitle = $nodeDetails->title->value;
+//   $createDate = $nodeDetails->created->value;
+//   $author = $nodeDetails->uid->entity->name->value;
+//   $format = 2012 - 02 - 32;
+//   $date = \Drupal::service('date.formatter')->format($createDate, '$format');
+//   $revTitle = \Drupal::entityTypeManager()->getStorage('node')->revisionIds(Node::load($nid));
+//   $pre_vId= $revTitle[count($revTitle)-2];
+//   $revTitle = \Drupal::entityTypeManager()->getStorage('node')->loadRevision($pre_vId)->title->value;
+//   // dd($pre_vId);
+  
+//   $logger = Node::create(['type' => 'log']);
+//   $logger->set('title', "Difference");
+//   $logger->set('field_previous_value', $pre_vId);
+//   $logger->set('field_new_value', $updatedTitle);
+//   $logger->set('field_created_date', $date);
+//   $logger->set('field_user', $author);
+//   $logger->save();
+// }

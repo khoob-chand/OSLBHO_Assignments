@@ -1,0 +1,16 @@
+basicmodule.show:
+  path: '/khoob'
+  defaults:
+    _controller: '\Drupal\basicmodule\Controller\DisplayController::show'
+    _title: 'my first visible module'
+  requirements:
+    _permission: 'student'  
+    # _role: Content editor
+
+basicmodule.information:
+  path: '/information'
+  defaults:
+    _controller: '\Drupal\basicmodule\Controller\DisplayController::information'
+    _title: 'information page'
+  requirements:
+    _permission: 'access content'  

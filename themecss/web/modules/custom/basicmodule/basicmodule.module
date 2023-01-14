@@ -1,0 +1,15 @@
+<?php 
+
+    function basicmodule_theme($existing,$theme,$type,$path){
+        return array(
+            'info'=>array(
+                'variables'=>array(
+                    'items'=>[],
+                    'title'=>''
+                )
+            )    
+                
+        
+
+        );
+   }

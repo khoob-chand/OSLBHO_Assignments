@@ -1,0 +1,4 @@
+name: custom template
+type: module
+package: custom
+core_version_requirement: ^8 || ^9

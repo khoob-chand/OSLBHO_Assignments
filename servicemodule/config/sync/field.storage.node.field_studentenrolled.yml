@@ -1,0 +1,20 @@
+uuid: 1add8b5a-68bd-45c6-80af-94d17b5bdeae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_studentenrolled
+field_name: field_studentenrolled
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

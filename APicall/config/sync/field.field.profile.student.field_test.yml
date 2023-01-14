@@ -1,0 +1,40 @@
+uuid: 0b08fb64-a838-4d34-a778-1351e281c768
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_test
+    - paragraphs.paragraphs_type.test
+    - profile.type.student
+  module:
+    - entity_reference_revisions
+id: profile.student.field_test
+field_name: field_test
+entity_type: profile
+bundle: student
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      test: test
+    negate: 0
+    target_bundles_drag_drop:
+      about:
+        weight: 5
+        enabled: false
+      document:
+        weight: 6
+        enabled: false
+      education:
+        weight: 7
+        enabled: false
+      test:
+        weight: 8
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,15 @@
+uuid: c0f8f626-62ca-4c7d-beba-99552527099c
+langcode: en
+status: true
+dependencies: {  }
+id: student
+label: student
+display_label: ''
+multiple: false
+registration: false
+roles:
+  authenticated: authenticated
+  content_editor: content_editor
+  administrator: administrator
+allow_revisions: false
+new_revision: false

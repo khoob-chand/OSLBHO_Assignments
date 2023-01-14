@@ -1,0 +1,4 @@
+name: khoobchand
+type: module
+description: Recieve the data from vault through API and create data type.
+core_version_requirement: ^9.3 || ^10

@@ -1,0 +1,19 @@
+uuid: 486314d5-1405-4e39-a6ec-f3774e9c556a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_professor
+    - node.type.customer
+id: node.customer.field_professor
+field_name: field_professor
+entity_type: node
+bundle: customer
+label: professor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

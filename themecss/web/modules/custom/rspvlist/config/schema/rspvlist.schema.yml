@@ -1,0 +1,10 @@
+rspvlist.settings:
+  type: config_object
+  label: content types
+  mapping:
+    allowed_types:
+       type: sequence
+       label: content display 
+       sequence:
+         type: string
+         label: content type

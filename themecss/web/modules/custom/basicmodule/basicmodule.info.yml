@@ -1,0 +1,5 @@
+name: basicmodule
+type: module
+package: mymodules
+description: created my own custom mymodules
+core_version_requirement: ^8 || ^9

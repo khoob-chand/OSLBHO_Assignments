@@ -1,0 +1,37 @@
+employee.kuchbhi:
+  path: '/myform'
+  defaults:
+    # _form: '\Drupal\employee\Form\AnythingForm'
+    _controller: '\Drupal\employee\Controller\EmpController::content'
+    _title: 'created form'
+  requirements: 
+    _permission: 'access content'  
+  
+
+
+employee.kuch:
+  path: '/employee'
+  defaults:
+    # _form: '\Drupal\employee\Form\AnythingForm'
+    _controller: '\Drupal\employee\Controller\EmpController::getemployee'
+    _title: 'created form'
+  requirements: 
+    _permission: 'access content'  
+  
+employee.abhibhikuch:
+  path: '/edit-employee/{id}'
+  defaults:
+    _form: '\Drupal\employee\Form\EditEmployee'
+    # _controller: '\Drupal\employee\Controller\EmpController::getemployee'
+    _title: 'created form'
+  requirements: 
+    _permission: 'access content'  
+  
+employee.kuch4:
+  path: '/delete-employee/{id}'
+  defaults:
+    # _form: '\Drupal\employee\Form\AnythingForm'
+    _controller: '\Drupal\employee\Controller\EmpController::deleteController'
+    _title: 'created form'
+  requirements: 
+    _permission: 'access content'  

@@ -1,0 +1,6 @@
+name: module devel
+type: module
+description: module development
+core_version_requirement: ^8 || ^9
+package: custom
+

@@ -1,0 +1,49 @@
+uuid: d9f80217-6ce3-4b02-98ab-510cf13f633e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event1.field_judge
+    - field.field.taxonomy_term.event1.field_organise
+    - field.field.taxonomy_term.event1.field_participants
+    - taxonomy.vocabulary.event1
+  module:
+    - text
+id: taxonomy_term.event1.default
+targetEntityType: taxonomy_term
+bundle: event1
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_judge:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_organise:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_participants:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,10 @@
+basicmodule.show:
+  title: info..
+  description: infp page 
+  route_name: basicmodule.show
+  menu_name: main
+  weight: 1
+  options:
+    attributes:
+      target: _blank
+    

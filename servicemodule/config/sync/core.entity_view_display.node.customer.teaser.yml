@@ -1,0 +1,31 @@
+uuid: 605bfdb9-8573-4db6-9313-7b3bd936ae35
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.customer.field_course_name
+    - field.field.node.customer.field_course_start_date
+    - field.field.node.customer.field_description
+    - field.field.node.customer.field_professor
+    - field.field.node.customer.field_studentenrolled
+    - node.type.customer
+  module:
+    - user
+id: node.customer.teaser
+targetEntityType: node
+bundle: customer
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_course_name: true
+  field_course_start_date: true
+  field_description: true
+  field_professor: true
+  field_studentenrolled: true
+  search_api_excerpt: true

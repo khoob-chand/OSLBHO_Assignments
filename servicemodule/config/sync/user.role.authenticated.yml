@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - rest.resource.dummy_api
   module:
     - comment
     - contact
     - filter
-    - search
+    - rest
+    - search_api
     - service
     - shortcut
     - system
@@ -23,8 +25,10 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'administer search_api'
   - 'post comments'
-  - 'search content'
+  - 'restful get dummy_api'
+  - 'restful post dummy_api'
   - 'service create entities'
   - 'skip comment approval'
   - 'use text format basic_html'

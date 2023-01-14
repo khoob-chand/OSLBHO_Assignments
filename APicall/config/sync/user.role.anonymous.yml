@@ -1,0 +1,36 @@
+uuid: 17082b18-b065-4bfd-b7d3-47ceb6f11679
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+    - rest.resource.dummy_api
+  module:
+    - comment
+    - contact
+    - devel_php
+    - filter
+    - paragraphs
+    - rest
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'administer rest resources'
+  - 'edit behavior plugin settings'
+  - 'execute php code'
+  - 'restful get dummy_api'
+  - 'restful post dummy_api'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view unpublished paragraphs'

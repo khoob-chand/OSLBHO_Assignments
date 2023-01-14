@@ -1,0 +1,25 @@
+uuid: 44d2883e-060a-432d-8d79-501ab6b979af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.test.field_testname
+    - paragraphs.paragraphs_type.test
+id: paragraph.test.default
+targetEntityType: paragraph
+bundle: test
+mode: default
+content:
+  field_testname:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

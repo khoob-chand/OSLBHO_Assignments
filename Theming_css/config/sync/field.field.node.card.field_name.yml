@@ -1,0 +1,19 @@
+uuid: b46bf24a-7958-4558-9308-436e6995b1d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.card
+id: node.card.field_name
+field_name: field_name
+entity_type: node
+bundle: card
+label: name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+uuid: c1d62ee7-6251-4df3-8a64-7cb67f2ba58a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - rest.resource.dummy_api
+  module:
+    - comment
+    - contact
+    - devel_php
+    - filter
+    - paragraphs
+    - rest
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'administer rest resources'
+  - 'edit behavior plugin settings'
+  - 'execute php code'
+  - 'post comments'
+  - 'restful get dummy_api'
+  - 'restful post dummy_api'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view unpublished paragraphs'

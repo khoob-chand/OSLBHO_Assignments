@@ -1,0 +1,8 @@
+calculator.dummy1:
+  path: '/calculator'
+  defaults:
+    _form: '\Drupal\calculator\Form\CalculatorForm'
+    # _controller:  'Drupal\dummy\Controller\DummyController::content'
+    _title: 'Simple form'
+  requirements:
+    _permission: 'access content'

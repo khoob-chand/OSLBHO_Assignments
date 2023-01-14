@@ -1,0 +1,6 @@
+name: Studentreg
+type: module
+description: developing hooks files
+package: custom
+core_version_requirement: ^8 ||^9
+

@@ -1,0 +1,19 @@
+uuid: bfffc98c-911d-4883-bbad-f13a72fc8ccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_professors
+    - node.type.page
+id: node.page.field_professors
+field_name: field_professors
+entity_type: node
+bundle: page
+label: Professors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

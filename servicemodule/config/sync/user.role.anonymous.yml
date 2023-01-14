@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - rest.resource.dummy_api
   module:
     - comment
     - contact
     - filter
-    - search
+    - rest
+    - search_api
     - service
     - system
 _core:
@@ -21,7 +23,9 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
-  - 'search content'
+  - 'administer search_api'
+  - 'restful get dummy_api'
+  - 'restful post dummy_api'
   - 'service create entities'
   - 'use text format restricted_html'
   - 'view published serviceentity entities'
